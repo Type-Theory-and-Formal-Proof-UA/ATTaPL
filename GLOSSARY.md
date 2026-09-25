@@ -347,3 +347,12 @@
 | region inference | виведення регіонів |
 | store (semantics) | сховище |
 | ordered type system | упорядкована система типів |
+| value restriction | обмеження на значення |
+| Pi type (Pi types) | Pi-типи — друкуються латиницею «Pi», як у книзі (вказівник на «залежні типи») |
+| phantom type | фантомний тип |
+| singleton kind / singleton type | одиничний рід / одиничний тип |
+| uniqueness type | тип унікальності |
+| phase distinction | фазова відмінність |
+| polymorphic variant | поліморфний варіант |
+| sealing | запечатування |
+| dot notation (signatures) | точкова нотація |
