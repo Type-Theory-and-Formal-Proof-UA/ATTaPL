@@ -4,12 +4,24 @@ raw/
 src/
 # Пробні файли дочірніх агентів
 *.bak
+*.bak-apo
 _probe*
 *.tmp
 build/
 node_modules/
 # Видобутий текст оригіналу не розповсюджується (авторське право).
 out/*/source.txt
+# Проміжні файли перекладу: _part<n>.typ/_chunk<n>.txt — лише вхід для злиття
+# (scripts/58_merge_back.py); готовий текст лежить у out/<частина>/uk.typ.
+# ordered.txt/rows.txt/structured.txt — проміжні витяги з PDF.
+out/*/_part*.typ
+out/*/_chunk*.txt
+out/*/ordered.txt
+out/*/rows.txt
+out/*/structured.txt
+# Службові одноразові скрипти та звіт перевірки
+scripts/_*.py
+verify.json
 # Вихід збірки (make html)
 /build/
 /site/
