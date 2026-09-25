@@ -87,10 +87,23 @@ body = ["// Згенеровано scripts/50_assemble.py — не редагу�
         '// Усі перекладені розділи в одному документі.\n',
         '#import "/templates/html.typ": html-support\n',
         '#show: html-support\n',
+        '#import "/templates/parts.typ": partpage\n',
         '#include "/templates/frontmatter.typ"\n']
+# Титульні сторінки частин стоять ПЕРЕД першим розділом своєї частини — так само,
+# як у книжці (стор. 16, 152, 236, 306, 402).  Розділ 1 відкриває частину I.
+PARTS = {1: ("I", "Точний аналіз типів"),
+         4: ("II", "Типи для низькорівневих мов"),
+         6: ("III", "Типи та міркування про програми"),
+         8: ("IV", "Типи для програмування «в великому»"),
+         10: ("V", "Виведення типів")}
 for ch in sorted(chapters, key=book_key):
-    if ch in translated:
-        body.append(f'#include "/book/{ch}.typ"\n')
+    if ch not in translated:
+        continue
+    m = re.match(r"^ch(\d+)$", ch)
+    if m and int(m.group(1)) in PARTS:
+        num, title = PARTS[int(m.group(1))]
+        body.append(f'#partpage("{num}", [{title}])\n')
+    body.append(f'#include "/book/{ch}.typ"\n')
 master.write_text("".join(body), encoding="utf-8")
 r = subprocess.run(["typst", "compile", "--root", str(ROOT), str(master),
                     str(ROOT / "build" / "attapl-uk.pdf")], capture_output=True, text=True)
