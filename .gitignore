@@ -22,6 +22,11 @@ out/*/structured.txt
 # Службові одноразові скрипти та звіт перевірки
 scripts/_*.py
 verify.json
+# Проміжні витяги бібліографії: ordered2.txt — виправлений розбір, _gen*.txt —
+# готові позиції, з яких scripts/78_refsparts.py робить _part*.typ. Готовий текст
+# лежить у out/refs01/uk.typ.
+out/*/ordered2.txt
+out/*/_gen*.txt
 # Вихід збірки (make html)
 /build/
 /site/

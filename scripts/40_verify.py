@@ -56,11 +56,15 @@ def verify(part):
         problems.append(f"{bad} x ⟹-spelling (arrow.r.double.long / arrow.r.long.double)")
 
     # 4. apostrophes
-    n2019, n02bc, nstraight = uk.count("\u2019"), uk.count("\u02bc"), len(re.findall(r"[A-Za-zА-Яа-яїієґ'’ʼ]+'[A-Za-zА-Яа-яїієґ]", uk))
+    # The word pattern requires a CYRILLIC letter on at least one side: a straight
+    # apostrophe is a defect only inside Ukrainian text.  Non-Cyrillic names
+    # legitimately keep it ("O'Keefe", the OCaml prime "tm1'", the rule "hmx-Inst'").
+    n2019, n02bc = uk.count("\u2019"), uk.count("\u02bc")
+    nstraight = len(re.findall(r"[А-Яа-яЇїІіЄєҐґ][\w\u2019\u02bc']*'[\w\u2019\u02bc']*|[A-Za-zА-Яа-яїієґ']*'[А-Яа-яЇїІіЄєҐґ]", uk))
     if n02bc:
         problems.append(f"{n02bc} x U+02BC apostrophe (must be U+2019)")
     if nstraight:
-        problems.append(f"{nstraight} x straight ' inside a word")
+        problems.append(f"{nstraight} x straight ' inside a Ukrainian word")
 
     # 5. unquoted Cyrillic in math
     for m in re.finditer(r"\$[^$]*\$", uk):

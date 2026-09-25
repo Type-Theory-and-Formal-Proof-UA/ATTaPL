@@ -34,8 +34,12 @@ def main(parts):
         for spelling, (rendered, note) in TRAPS.items():
             if spelling == 'hash':
                 continue  # informational only
-            # skip occurrences inside a quoted string ("circ") — those are literal text
-            n = len(re.findall(re.escape(spelling) + r'(?![^"]*")', t))
+            # Skip occurrences inside a quoted string ("circ") — those are literal text.
+            # Require a WORD BOUNDARY: a bare substring match fires on ordinary words
+            # ("Inter+sect+ion" looked like a stray `sect` symbol), so the pattern is
+            # anchored on a non-letter before and after.
+            pat = r'(?<![A-Za-z])' + re.escape(spelling) + r'(?![A-Za-z])'
+            n = len(re.findall(pat, t))
             n -= len(re.findall(r'"' + re.escape(spelling.rstrip('(')), t))
             if n > 0:
                 hits.append(f"    {spelling!r} x{n}: renders {rendered} — {note}")

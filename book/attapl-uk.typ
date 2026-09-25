@@ -14,4 +14,5 @@
 #include "/book/ch09.typ"
 #include "/book/ch10.typ"
 #include "/book/appa.typ"
+#include "/book/refs.typ"
 #include "/book/index.typ"
