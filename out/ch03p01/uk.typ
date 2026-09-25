@@ -1,6 +1,6 @@
 #import "/templates/preamble.typ": *
 
-#chap("3", "Effect Types and Region-Based Memory Management")[Fritz Henglein, Henning Makholm, and Henning Niss]
+#chap("3", "Типи ефектів і керування пам’яттю на основі регіонів")[Fritz Henglein, Henning Makholm, and Henning Niss]
 
 Аналіз програм на основі типів — це аналіз програм, що спирається на поняття, теорії та
 технології, розроблені для систем типів і використовувані в означенні мов програмування.

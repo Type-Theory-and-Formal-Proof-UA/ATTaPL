@@ -10,3 +10,6 @@ build/
 node_modules/
 # Видобутий текст оригіналу не розповсюджується (авторське право).
 out/*/source.txt
+# Вихід збірки (make html)
+/build/
+/site/

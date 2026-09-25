@@ -31,24 +31,38 @@
 #let secprefix = state("secprefix", "0.0")
 #let stmtnum = counter("stmt")
 
+// --- HTML-експорт ------------------------------------------------------------
+// Експорт у HTML (експериментальний) не має рушія верстки: сітки, позиціонування
+// й блоки з рамкою верстаються через `html.frame` — вбудований SVG. Ширина рамки
+// — це ширина текстового блоку PDF: без сторінки `1fr` згорнулось би в нуль.
+#let html-width = 42em
+#let html-frame(body) = html.elem("div", attrs: (class: "frame"), html.frame(body))
+
 // --- структурні заголовки ---------------------------------------------------
 // Глава: #chap("1", "Substructural Type Systems")[David Walker]
 #let chap(num, title, author) = {
   currentchapter.update(if num == "" { title } else { num + " " + title })
   secprefix.update("0.0")
   stmtnum.update(0)
-  pagebreak(weak: true)
-  v(2em)
-  text(size: 22pt, weight: "regular")[
-    #if num != "" [#grid(columns: (2.2em, 1fr), column-gutter: 0.6em)[
-      #text(fill: luma(120))[#num]
-    ][#title]] else [#title]
-  ]
-  if author != [] {
-    v(0.5em)
-    align(right)[#emph(author)]
+  context if target() == "html" {
+    // Експорт у HTML: розділювач сторінок tools/split_html.py ріже за <h2 class="chapter">.
+    html.elem("h2", attrs: (class: "chapter", id: "ch" + num),
+      if num == "" { title } else { num + " " + title })
+    if author != [] { html.elem("p", attrs: (class: "author"), emph(author)) }
+  } else {
+    pagebreak(weak: true)
+    v(2em)
+    text(size: 22pt, weight: "regular")[
+      #if num != "" [#grid(columns: (2.2em, 1fr), column-gutter: 0.6em)[
+        #text(fill: luma(120))[#num]
+      ][#title]] else [#title]
+    ]
+    if author != [] {
+      v(0.5em)
+      align(right)[#emph(author)]
+    }
+    v(1.2em)
   }
-  v(1.2em)
 }
 
 // Розділ (section): сам задає нумерацію тверджень цього розділу.
@@ -108,15 +122,18 @@
 // --- блоки правил / фігур ---------------------------------------------------
 // Дошка для правил виведення, боксів синтаксису й таблиць: текст усередині
 // зберігає розбиття на рядки (саме так воно надруковано в книзі).
-#let rules(body, scale: 0.94) = block(
-  width: 100%, inset: 7pt, radius: 0pt,
-  stroke: (paint: luma(60), thickness: 0.5pt),
-)[
-  #set text(size: 10.5pt * scale)
-  #set par(justify: false, first-line-indent: 0em, leading: 0.60em)
-  #set block(spacing: 0.45em)
-  #body
-]
+#let rules(body, scale: 0.94) = context {
+  let box = block(
+    width: if target() == "html" { html-width } else { 100% }, inset: 7pt, radius: 0pt,
+    stroke: (paint: luma(60), thickness: 0.5pt),
+  )[
+    #set text(size: 10.5pt * scale)
+    #set par(justify: false, first-line-indent: 0em, leading: 0.60em)
+    #set block(spacing: 0.45em)
+    #body
+  ]
+  if target() == "html" { html-frame(box) } else { box }
+}
 // Правило виведення у два стовпці: посилки над рискою, висновок під нею.
 #let rule(premises, name, conclusion) = block(breakable: false)[ // premises/conclusion positional
   #grid(columns: 2, column-gutter: 1.2em, align: (center + horizon, right + horizon),
@@ -138,11 +155,14 @@
 // Номер рівняння всередині абзацу: текст вигляду «…, (7.32) де …»
 #let eqnnum_inline(num) = text(size: 9.5pt)[(#num)]
 // Нумерована виключна формула: #eqn($...$, "7.1") — номер у правому полі, як в оригіналі.
-#let eqn(body, num) = block(width: 100%, breakable: false)[
-  #place(right + horizon, text(size: 9.5pt)[(#num)])
-  #align(center)[$#body$]
-  #v(-0.35em)
-]
+#let eqn(body, num) = context {
+  let box = block(width: if target() == "html" { html-width } else { 100% }, breakable: false)[
+    #place(right + horizon, text(size: 9.5pt)[(#num)])
+    #align(center)[$#body$]
+    #v(-0.35em)
+  ]
+  if target() == "html" { html-frame(box) } else { box }
+}
 
 // Нумерований список із довільним стилем нумерації: #numbered("(i)", [...], [...])
 #let numbered(numbering, ..items) = enum(numbering: numbering, ..items.pos())

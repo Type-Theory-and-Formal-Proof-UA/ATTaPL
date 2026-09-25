@@ -1,7 +1,5 @@
 #import "/templates/preamble.typ": *
 
-#chap("3", "Effect Types and Region-Based Memory Management")[Fritz Henglein, Henning Makholm, and Henning Niss]
-
 #sec("3.5", "Система типів Тофте–Тальпіна")
 
 Одна з рис, що відрізняє регіонну мову Тофте й Тальпіна від інших систем на основі

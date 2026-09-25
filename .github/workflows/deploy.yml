@@ -1,3 +1,7 @@
+# Збирає HTML-видання (по одній сторінці на розділ) і PDF за допомогою Typst
+# та публікує їх на GitHub Pages.
+#
+# Одноразове налаштування: Settings > Pages > Source: "GitHub Actions".
 name: Deploy
 
 on:
@@ -24,30 +28,25 @@ jobs:
         with:
           typst-version: 0.15.0
 
-      - name: Compile book
+      - name: Build
         run: |
-          mkdir -p _site
-          typst compile --root . book/attapl-uk.typ _site/attapl-uk.pdf
-          cat > _site/index.html <<'HTML'
-          <!doctype html>
-          <html lang="uk">
-          <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <meta http-equiv="refresh" content="0; url=attapl-uk.pdf">
-            <title>Поглиблені теми з типів та мов програмування</title>
-          </head>
-          <body>
-            <p><a href="attapl-uk.pdf">Поглиблені теми з типів та мов програмування (PDF)</a></p>
-          </body>
-          </html>
-          HTML
+          set -euxo pipefail
+          mkdir -p build site
+          # Експорт у HTML у Typst ще експериментальний, тому прапорець.
+          typst compile --root . --features html --format html book/attapl-uk.typ build/book.html
+          # Typst видає одну довгу сторінку; розрізаємо її по розділах.
+          python3 tools/split_html.py build/book.html site
+          typst compile --root . book/attapl-uk.typ site/attapl-uk.pdf
+          touch site/.nojekyll
+          test -s site/index.html
+          test -s site/ch01.html
+          test -s site/attapl-uk.pdf
 
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: site
 
   deploy:
     needs: build

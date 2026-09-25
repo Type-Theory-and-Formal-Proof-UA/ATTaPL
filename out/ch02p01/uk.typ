@@ -1,6 +1,6 @@
 #import "/templates/preamble.typ": *
 
-#chap("2", "Dependent Types")[David Aspinall and Martin Hofmann]
+#chap("2", "Залежні типи")[David Aspinall and Martin Hofmann]
 
 У найзагальнішому розумінні залежні типи — це функції зі значеннями-типами. Це означення
 охоплює, наприклад, типові оператори $F#h(-0.17em)omega$, такі як $"Pair"$. Застосований до двох типів

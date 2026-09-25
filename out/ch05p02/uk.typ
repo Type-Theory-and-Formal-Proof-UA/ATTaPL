@@ -1,7 +1,5 @@
 #import "/templates/preamble.typ": *
 
-#chap("5", "Proof-Carrying Code")[George Necula]
-
 #sec("5.5", "Подання та перевірка доведень")
 
 У попередніх розділах ми показали, як породження умов перевірки можна використати

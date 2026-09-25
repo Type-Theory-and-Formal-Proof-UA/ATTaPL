@@ -1,5 +1,7 @@
 // Згенеровано scripts/50_assemble.py — не редагувати вручну.
 // Усі перекладені розділи в одному документі.
+#import "/templates/html.typ": html-support
+#show: html-support
 #include "/templates/frontmatter.typ"
 #include "/book/ch01.typ"
 #include "/book/ch02.typ"
