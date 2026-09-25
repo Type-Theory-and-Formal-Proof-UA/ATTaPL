@@ -114,7 +114,10 @@
   let bits = ()
   if rec { bits.push("Recommended") }
   if diff != none { bits.push(diff) }
-  if sol { bits.push("✓") }
+  // The no-solution marker is a SLASHED RIGHT ARROW (↛) in the book, not a check
+  // mark: the Preface defines "Exercise [↛]" as "solution not in Appendix A", and the
+  // extractor decodes the glyph as a `3` (font F0).  A ✓ asserts the opposite.
+  if sol { bits.push("↛") }
   let extra = if bits.len() > 0 { " [" + bits.join(", ") + "]" } else { none }
   _stmt("Exercise", it, extra: extra)
 }

@@ -1,358 +1,369 @@
 {
-  "ch06p01": {
-    "slot": "parent",
-    "chapter": "ch06",
-    "part": "ch06p01",
-    "sections": [
-      "6.1 The Equivalence Problem",
-      "6.2 Non-Type-Directed Equivalence Checking",
-      "6.3 Type-Driven Equivalence",
-      "6.4 An Equivalence Algorithm",
-      "6.5 Completeness: A First Attempt",
-      "6.6 Logical Relations",
-      "6.7 A Monotone Logical Relation",
-      "6.8 The Main Lemma",
-      "6.9 The Fundamental Theorem",
-      "6.10 Notes"
-    ],
-    "words": 8126,
-    "source": "out/ch06p01/source.txt",
-    "output": "out/ch06p01/uk.typ"
-  },
-  "ch01p01": {
-    "slot": "child1",
-    "chapter": "ch01",
-    "part": "ch01p01",
-    "sections": [
-      "1.1 Structural Properties",
-      "1.2 A Linear Type System",
-      "1.3 Extensions and Variations",
-      "1.4 An Ordered Type System",
-      "1.5 Further Applications",
-      "1.6 Notes"
-    ],
-    "words": 15217,
-    "source": "out/ch01p01/source.txt",
-    "output": "out/ch01p01/uk.typ"
-  },
-  "ch02p01": {
-    "slot": "child2",
-    "chapter": "ch02",
-    "part": "ch02p01",
-    "sections": [
-      "2.1 Motivations",
-      "2.2 Pure First-Order Dependent Types",
-      "2.3 Properties",
-      "2.4 Algorithmic Typing and Equality",
-      "2.5 Dependent Sum Types",
-      "2.6 The Calculus of Constructions",
-      "2.7 Relating Abstractions: Pure Type Systems",
-      "2.8 Programming with Dependent Types",
-      "2.9 Implementation of Dependent Types",
-      "2.10 Further Reading"
-    ],
-    "words": 15249,
-    "source": "out/ch02p01/source.txt",
-    "output": "out/ch02p01/uk.typ"
-  },
-  "ch03p01": {
-    "slot": "child3",
-    "chapter": "ch03",
-    "part": "ch03p01",
-    "sections": [
-      "3.1 Introduction and Overview",
-      "3.2 Value Flow by Typing with Labels",
-      "3.3 Effects",
-      "3.4 Region-Based Memory Management"
-    ],
-    "words": 10343,
-    "source": "out/ch03p01/source.txt",
-    "output": "out/ch03p01/uk.typ"
-  },
-  "ch03p02": {
-    "slot": "child4",
-    "chapter": "ch03",
-    "part": "ch03p02",
-    "sections": [
-      "3.5 The Tofte–Talpin Type System",
-      "3.6 Region Inference",
-      "3.7 More Powerful Models for Region-Based Memory Management",
-      "3.8 Practical Region-Based Memory Management Systems"
-    ],
-    "words": 9814,
-    "source": "out/ch03p02/source.txt",
-    "output": "out/ch03p02/uk.typ"
-  },
-  "ch04p01": {
-    "slot": "child5",
-    "chapter": "ch04",
-    "part": "ch04p01",
-    "sections": [
-      "4.1 TAL-0: Control-Flow-Safety",
-      "4.2 The TAL-0 Type System",
-      "4.3 TAL-1: Simple Memory-Safety",
-      "4.4 TAL-1 Changes to the Type System",
-      "4.5 Compiling to TAL-1",
-      "4.6 Scaling to Other Language Features",
-      "4.7 Some Real World Issues",
-      "4.8 Conclusions"
-    ],
-    "words": 14154,
-    "source": "out/ch04p01/source.txt",
-    "output": "out/ch04p01/uk.typ"
-  },
-  "ch05p01": {
-    "slot": "child6",
-    "chapter": "ch05",
-    "part": "ch05p01",
-    "sections": [
-      "5.1 Overview of Proof Carrying Code",
-      "5.2 Formalizing the Safety Policy",
-      "5.3 Verification-Condition Generation",
-      "5.4 Soundness Proof"
-    ],
-    "words": 10904,
-    "source": "out/ch05p01/source.txt",
-    "output": "out/ch05p01/uk.typ"
-  },
-  "ch05p02": {
-    "slot": "child7",
-    "chapter": "ch05",
-    "part": "ch05p02",
-    "sections": [
-      "5.5 The Representation and Checking of Proofs",
-      "5.6 Proof Generation",
-      "5.7 PCC beyond Types",
-      "5.8 Conclusion"
-    ],
-    "words": 6612,
-    "source": "out/ch05p02/source.txt",
-    "output": "out/ch05p02/uk.typ"
-  },
-  "ch07p01": {
-    "slot": "parent",
-    "chapter": "ch07",
-    "part": "ch07p01",
-    "sections": [
-      "7.1 Introduction",
-      "7.2 Overview",
-      "7.3 Motivating Examples",
-      "7.4 The Language"
-    ],
-    "words": 5829,
-    "source": "out/ch07p01/source.txt",
-    "output": "out/ch07p01/uk.typ"
-  },
-  "ch07p02": {
-    "slot": "parent",
-    "chapter": "ch07",
-    "part": "ch07p02",
-    "sections": [
-      "7.5 Contextual Equivalence",
-      "7.6 An Operationally Based Logical Relation"
-    ],
-    "words": 7181,
-    "source": "out/ch07p02/source.txt",
-    "output": "out/ch07p02/uk.typ"
-  },
-  "ch07p03": {
-    "slot": "parent",
-    "chapter": "ch07",
-    "part": "ch07p03",
-    "sections": [
-      "7.7 Operational Extensionality",
-      "7.8 Notes"
-    ],
-    "words": 4157,
-    "source": "out/ch07p03/source.txt",
-    "output": "out/ch07p03/uk.typ"
-  },
-  "ch08p01": {
-    "slot": "parent",
-    "chapter": "ch08",
-    "part": "ch08p01",
-    "sections": [
-      "8.1 Basic Modularity",
-      "8.2 Type Checking and Evaluation of Modules",
-      "8.3 Compilation and Linking",
-      "8.4 Phase Distinction"
-    ],
-    "words": 4948,
-    "source": "out/ch08p01/source.txt",
-    "output": "out/ch08p01/uk.typ"
-  },
-  "ch08p02": {
-    "slot": "parent",
-    "chapter": "ch08",
-    "part": "ch08p02",
-    "sections": [
-      "8.5 Abstract Type Components",
-      "8.6 Module Hierarchies"
-    ],
-    "words": 4488,
-    "source": "out/ch08p02/source.txt",
-    "output": "out/ch08p02/uk.typ"
-  },
-  "ch08p03": {
-    "slot": "parent",
-    "chapter": "ch08",
-    "part": "ch08p03",
-    "sections": [
-      "8.7 Signature Families",
-      "8.8 Module Families",
-      "8.9 Advanced Topics"
-    ],
-    "words": 7173,
-    "source": "out/ch08p03/source.txt",
-    "output": "out/ch08p03/uk.typ"
-  },
-  "ch08p04": {
-    "slot": "parent",
-    "chapter": "ch08",
-    "part": "ch08p04",
-    "sections": [
-      "8.10 Relation to Some Existing Languages",
-      "8.11 History and Further Reading"
-    ],
-    "words": 1599,
-    "source": "out/ch08p04/source.txt",
-    "output": "out/ch08p04/uk.typ"
-  },
-  "ch09p01": {
-    "slot": "parent",
-    "chapter": "ch09",
-    "part": "ch09p01",
-    "sections": [
-      "9.1 Definitions in the Typing Context",
-      "9.2 Definitions in Module Interfaces"
-    ],
-    "words": 5633,
-    "source": "out/ch09p01/source.txt",
-    "output": "out/ch09p01/uk.typ"
-  },
-  "ch09p02": {
-    "slot": "parent",
-    "chapter": "ch09",
-    "part": "ch09p02",
-    "sections": [
-      "9.3 Singleton Kinds",
-      "9.4 Notes"
-    ],
-    "words": 7312,
-    "source": "out/ch09p02/source.txt",
-    "output": "out/ch09p02/uk.typ"
-  },
-  "ch10p01": {
-    "slot": "parent",
-    "chapter": "ch10",
-    "part": "ch10p01",
-    "sections": [
-      "10.1 What Is ML?"
-    ],
-    "words": 8243,
-    "source": "out/ch10p01/source.txt",
-    "output": "out/ch10p01/uk.typ"
-  },
-  "ch10p02": {
-    "slot": "parent",
-    "chapter": "ch10",
-    "part": "ch10p02",
-    "sections": [
-      "10.2 Constraints"
-    ],
-    "words": 7498,
-    "source": "out/ch10p02/source.txt",
-    "output": "out/ch10p02/uk.typ"
-  },
-  "ch10p03": {
-    "slot": "parent",
-    "chapter": "ch10",
-    "part": "ch10p03",
-    "sections": [
-      "10.3 HM(X)",
-      "10.4 Constraint Generation",
-      "10.5 Type Soundness"
-    ],
-    "words": 7659,
-    "source": "out/ch10p03/source.txt",
-    "output": "out/ch10p03/uk.typ"
-  },
-  "ch10p04": {
-    "slot": "parent",
-    "chapter": "ch10",
-    "part": "ch10p04",
-    "sections": [
-      "10.6 Constraint Solving",
-      "10.7 From ML-the-Calculus to ML-the-Language"
-    ],
-    "words": 9917,
-    "source": "out/ch10p04/source.txt",
-    "output": "out/ch10p04/uk.typ"
-  },
-  "ch10p05": {
-    "slot": "parent",
-    "chapter": "ch10",
-    "part": "ch10p05",
-    "sections": [
-      "10.8 Rows"
-    ],
-    "words": 14248,
-    "source": "out/ch10p05/source.txt",
-    "output": "out/ch10p05/uk.typ"
-  },
-  "appap01": {
-    "slot": "parent",
-    "chapter": "appa",
-    "part": "appap01",
-    "sections": [
-      "ch1..ch4 solutions"
-    ],
-    "words": 3056,
-    "source": "out/appap01/source.txt",
-    "output": "out/appap01/uk.typ"
-  },
-  "appap02": {
-    "slot": "parent",
-    "chapter": "appa",
-    "part": "appap02",
-    "sections": [
-      "ch5..ch7 solutions"
-    ],
-    "words": 5574,
-    "source": "out/appap02/source.txt",
-    "output": "out/appap02/uk.typ"
-  },
-  "appap03": {
-    "slot": "parent",
-    "chapter": "appa",
-    "part": "appap03",
-    "sections": [
-      "ch8..ch10 solutions"
-    ],
-    "words": 9329,
-    "source": "out/appap03/source.txt",
-    "output": "out/appap03/uk.typ"
-  },
-  "index01": {
-    "slot": "parent",
-    "chapter": "index",
-    "part": "index01",
-    "sections": [
-      "index"
-    ],
-    "words": 2332,
-    "source": "out/index01/source.txt",
-    "output": "out/index01/uk.typ"
-  },
-  "refs01": {
-    "slot": "parent",
-    "chapter": "refs",
-    "part": "refs01",
-    "sections": [
-      "refs"
-    ],
-    "words": 10982,
-    "source": "out/refs01/source.txt",
-    "output": "out/refs01/uk.typ"
-  }
+ "preface01": {
+  "slot": "parent",
+  "chapter": "preface",
+  "part": "preface01",
+  "sections": [
+   "Preface"
+  ],
+  "words": 1516,
+  "source": "out/preface01/source.txt",
+  "output": "out/preface01/uk.typ"
+ },
+ "appap01": {
+  "slot": "parent",
+  "chapter": "appa",
+  "part": "appap01",
+  "sections": [
+   "ch1..ch4 solutions"
+  ],
+  "words": 3056,
+  "source": "out/appap01/source.txt",
+  "output": "out/appap01/uk.typ"
+ },
+ "appap02": {
+  "slot": "parent",
+  "chapter": "appa",
+  "part": "appap02",
+  "sections": [
+   "ch5..ch7 solutions"
+  ],
+  "words": 5574,
+  "source": "out/appap02/source.txt",
+  "output": "out/appap02/uk.typ"
+ },
+ "appap03": {
+  "slot": "parent",
+  "chapter": "appa",
+  "part": "appap03",
+  "sections": [
+   "ch8..ch10 solutions"
+  ],
+  "words": 9329,
+  "source": "out/appap03/source.txt",
+  "output": "out/appap03/uk.typ"
+ },
+ "ch01p01": {
+  "slot": "child1",
+  "chapter": "ch01",
+  "part": "ch01p01",
+  "sections": [
+   "1.1 Structural Properties",
+   "1.2 A Linear Type System",
+   "1.3 Extensions and Variations",
+   "1.4 An Ordered Type System",
+   "1.5 Further Applications",
+   "1.6 Notes"
+  ],
+  "words": 15217,
+  "source": "out/ch01p01/source.txt",
+  "output": "out/ch01p01/uk.typ"
+ },
+ "ch02p01": {
+  "slot": "child2",
+  "chapter": "ch02",
+  "part": "ch02p01",
+  "sections": [
+   "2.1 Motivations",
+   "2.2 Pure First-Order Dependent Types",
+   "2.3 Properties",
+   "2.4 Algorithmic Typing and Equality",
+   "2.5 Dependent Sum Types",
+   "2.6 The Calculus of Constructions",
+   "2.7 Relating Abstractions: Pure Type Systems",
+   "2.8 Programming with Dependent Types",
+   "2.9 Implementation of Dependent Types",
+   "2.10 Further Reading"
+  ],
+  "words": 15249,
+  "source": "out/ch02p01/source.txt",
+  "output": "out/ch02p01/uk.typ"
+ },
+ "ch03p01": {
+  "slot": "child3",
+  "chapter": "ch03",
+  "part": "ch03p01",
+  "sections": [
+   "3.1 Introduction and Overview",
+   "3.2 Value Flow by Typing with Labels",
+   "3.3 Effects",
+   "3.4 Region-Based Memory Management"
+  ],
+  "words": 10343,
+  "source": "out/ch03p01/source.txt",
+  "output": "out/ch03p01/uk.typ"
+ },
+ "ch03p02": {
+  "slot": "child4",
+  "chapter": "ch03",
+  "part": "ch03p02",
+  "sections": [
+   "3.5 The Tofte–Talpin Type System",
+   "3.6 Region Inference",
+   "3.7 More Powerful Models for Region-Based Memory Management",
+   "3.8 Practical Region-Based Memory Management Systems"
+  ],
+  "words": 9814,
+  "source": "out/ch03p02/source.txt",
+  "output": "out/ch03p02/uk.typ"
+ },
+ "ch04p01": {
+  "slot": "child5",
+  "chapter": "ch04",
+  "part": "ch04p01",
+  "sections": [
+   "4.1 TAL-0: Control-Flow-Safety",
+   "4.2 The TAL-0 Type System",
+   "4.3 TAL-1: Simple Memory-Safety",
+   "4.4 TAL-1 Changes to the Type System",
+   "4.5 Compiling to TAL-1",
+   "4.6 Scaling to Other Language Features",
+   "4.7 Some Real World Issues",
+   "4.8 Conclusions"
+  ],
+  "words": 14154,
+  "source": "out/ch04p01/source.txt",
+  "output": "out/ch04p01/uk.typ"
+ },
+ "ch05p01": {
+  "slot": "child6",
+  "chapter": "ch05",
+  "part": "ch05p01",
+  "sections": [
+   "5.1 Overview of Proof Carrying Code",
+   "5.2 Formalizing the Safety Policy",
+   "5.3 Verification-Condition Generation",
+   "5.4 Soundness Proof"
+  ],
+  "words": 10904,
+  "source": "out/ch05p01/source.txt",
+  "output": "out/ch05p01/uk.typ"
+ },
+ "ch05p02": {
+  "slot": "child7",
+  "chapter": "ch05",
+  "part": "ch05p02",
+  "sections": [
+   "5.5 The Representation and Checking of Proofs",
+   "5.6 Proof Generation",
+   "5.7 PCC beyond Types",
+   "5.8 Conclusion"
+  ],
+  "words": 6612,
+  "source": "out/ch05p02/source.txt",
+  "output": "out/ch05p02/uk.typ"
+ },
+ "ch06p01": {
+  "slot": "parent",
+  "chapter": "ch06",
+  "part": "ch06p01",
+  "sections": [
+   "6.1 The Equivalence Problem",
+   "6.2 Non-Type-Directed Equivalence Checking",
+   "6.3 Type-Driven Equivalence",
+   "6.4 An Equivalence Algorithm",
+   "6.5 Completeness: A First Attempt",
+   "6.6 Logical Relations",
+   "6.7 A Monotone Logical Relation",
+   "6.8 The Main Lemma",
+   "6.9 The Fundamental Theorem",
+   "6.10 Notes"
+  ],
+  "words": 8126,
+  "source": "out/ch06p01/source.txt",
+  "output": "out/ch06p01/uk.typ"
+ },
+ "ch07p01": {
+  "slot": "parent",
+  "chapter": "ch07",
+  "part": "ch07p01",
+  "sections": [
+   "7.1 Introduction",
+   "7.2 Overview",
+   "7.3 Motivating Examples",
+   "7.4 The Language"
+  ],
+  "words": 5829,
+  "source": "out/ch07p01/source.txt",
+  "output": "out/ch07p01/uk.typ"
+ },
+ "ch07p02": {
+  "slot": "parent",
+  "chapter": "ch07",
+  "part": "ch07p02",
+  "sections": [
+   "7.5 Contextual Equivalence",
+   "7.6 An Operationally Based Logical Relation"
+  ],
+  "words": 7181,
+  "source": "out/ch07p02/source.txt",
+  "output": "out/ch07p02/uk.typ"
+ },
+ "ch07p03": {
+  "slot": "parent",
+  "chapter": "ch07",
+  "part": "ch07p03",
+  "sections": [
+   "7.7 Operational Extensionality",
+   "7.8 Notes"
+  ],
+  "words": 4157,
+  "source": "out/ch07p03/source.txt",
+  "output": "out/ch07p03/uk.typ"
+ },
+ "ch08p01": {
+  "slot": "parent",
+  "chapter": "ch08",
+  "part": "ch08p01",
+  "sections": [
+   "8.1 Basic Modularity",
+   "8.2 Type Checking and Evaluation of Modules",
+   "8.3 Compilation and Linking",
+   "8.4 Phase Distinction"
+  ],
+  "words": 4948,
+  "source": "out/ch08p01/source.txt",
+  "output": "out/ch08p01/uk.typ"
+ },
+ "ch08p02": {
+  "slot": "parent",
+  "chapter": "ch08",
+  "part": "ch08p02",
+  "sections": [
+   "8.5 Abstract Type Components",
+   "8.6 Module Hierarchies"
+  ],
+  "words": 4488,
+  "source": "out/ch08p02/source.txt",
+  "output": "out/ch08p02/uk.typ"
+ },
+ "ch08p03": {
+  "slot": "parent",
+  "chapter": "ch08",
+  "part": "ch08p03",
+  "sections": [
+   "8.7 Signature Families",
+   "8.8 Module Families",
+   "8.9 Advanced Topics"
+  ],
+  "words": 7173,
+  "source": "out/ch08p03/source.txt",
+  "output": "out/ch08p03/uk.typ"
+ },
+ "ch08p04": {
+  "slot": "parent",
+  "chapter": "ch08",
+  "part": "ch08p04",
+  "sections": [
+   "8.10 Relation to Some Existing Languages",
+   "8.11 History and Further Reading"
+  ],
+  "words": 1599,
+  "source": "out/ch08p04/source.txt",
+  "output": "out/ch08p04/uk.typ"
+ },
+ "ch09p01": {
+  "slot": "parent",
+  "chapter": "ch09",
+  "part": "ch09p01",
+  "sections": [
+   "9.1 Definitions in the Typing Context",
+   "9.2 Definitions in Module Interfaces"
+  ],
+  "words": 5633,
+  "source": "out/ch09p01/source.txt",
+  "output": "out/ch09p01/uk.typ"
+ },
+ "ch09p02": {
+  "slot": "parent",
+  "chapter": "ch09",
+  "part": "ch09p02",
+  "sections": [
+   "9.3 Singleton Kinds",
+   "9.4 Notes"
+  ],
+  "words": 7312,
+  "source": "out/ch09p02/source.txt",
+  "output": "out/ch09p02/uk.typ"
+ },
+ "ch10p01": {
+  "slot": "parent",
+  "chapter": "ch10",
+  "part": "ch10p01",
+  "sections": [
+   "10.1 What Is ML?"
+  ],
+  "words": 8243,
+  "source": "out/ch10p01/source.txt",
+  "output": "out/ch10p01/uk.typ"
+ },
+ "ch10p02": {
+  "slot": "parent",
+  "chapter": "ch10",
+  "part": "ch10p02",
+  "sections": [
+   "10.2 Constraints"
+  ],
+  "words": 7498,
+  "source": "out/ch10p02/source.txt",
+  "output": "out/ch10p02/uk.typ"
+ },
+ "ch10p03": {
+  "slot": "parent",
+  "chapter": "ch10",
+  "part": "ch10p03",
+  "sections": [
+   "10.3 HM(X)",
+   "10.4 Constraint Generation",
+   "10.5 Type Soundness"
+  ],
+  "words": 7659,
+  "source": "out/ch10p03/source.txt",
+  "output": "out/ch10p03/uk.typ"
+ },
+ "ch10p04": {
+  "slot": "parent",
+  "chapter": "ch10",
+  "part": "ch10p04",
+  "sections": [
+   "10.6 Constraint Solving",
+   "10.7 From ML-the-Calculus to ML-the-Language"
+  ],
+  "words": 9917,
+  "source": "out/ch10p04/source.txt",
+  "output": "out/ch10p04/uk.typ"
+ },
+ "ch10p05": {
+  "slot": "parent",
+  "chapter": "ch10",
+  "part": "ch10p05",
+  "sections": [
+   "10.8 Rows"
+  ],
+  "words": 14248,
+  "source": "out/ch10p05/source.txt",
+  "output": "out/ch10p05/uk.typ"
+ },
+ "index01": {
+  "slot": "parent",
+  "chapter": "index",
+  "part": "index01",
+  "sections": [
+   "index"
+  ],
+  "words": 2332,
+  "source": "out/index01/source.txt",
+  "output": "out/index01/uk.typ"
+ },
+ "refs01": {
+  "slot": "parent",
+  "chapter": "refs",
+  "part": "refs01",
+  "sections": [
+   "refs"
+  ],
+  "words": 10982,
+  "source": "out/refs01/source.txt",
+  "output": "out/refs01/uk.typ"
+ }
 }

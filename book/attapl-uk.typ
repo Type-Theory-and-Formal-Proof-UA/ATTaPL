@@ -3,6 +3,7 @@
 #import "/templates/html.typ": html-support
 #show: html-support
 #include "/templates/frontmatter.typ"
+#include "/book/preface.typ"
 #include "/book/ch01.typ"
 #include "/book/ch02.typ"
 #include "/book/ch03.typ"

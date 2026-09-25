@@ -1,4 +1,5 @@
-// Титульна сторінка збірки (переклад десяти розділів).
+// Титульна сторінка збірки (переклад: передмова, розділи 1-10, додаток A,
+// бібліографія, покажчик).
 #import "/templates/preamble.typ": *
 
 #set page(numbering: none)
@@ -11,13 +12,12 @@
   #text(size: 13pt)[за редакцією Benjamin C. Pierce]
   #v(2cm)
   #text(size: 11pt)[
-    Переклад українською: розділи 1--10, додаток A,\
-    #v(0.3cm)
+    Переклад українською: передмова, розділи 1--10, додаток A,#linebreak()
     бібліографія та покажчик
   ]
   #v(1.2cm)
   #text(size: 10pt, style: "italic")[
-    Перекладено з видання: *Advanced Topics in Types and Programming Languages*,\
+    Перекладено з видання: *Advanced Topics in Types and Programming Languages*,#linebreak()
     Benjamin C. Pierce (editor), The MIT Press, 2004.
   ]
 ]
