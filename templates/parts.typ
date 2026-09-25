@@ -16,7 +16,10 @@
 // на y=174).  Тому це фіксований відступ, а не horizon.
 #import "/templates/preamble.typ": *
 
-#let partpage(num, title) = {
+#let partpage(num, title) = context if target() == "html" {
+  // HTML: tools/split_html.py ставить це над заголовком наступного розділу.
+  html.elem("h2", attrs: (class: "part"))[Частина #num. #title]
+} else {
   pagebreak()
   context {
     set page(numbering: none)

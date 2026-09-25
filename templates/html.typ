@@ -17,5 +17,7 @@
   } else { it }
   // Горизонтальні проміжки: HTML-експорт їх ігнорує, тож ставимо звичайний пропуск.
   show h: it => context if target() == "html" and it.amount != 1fr { sym.space } else { it }
+  // Поля (номер вправи в розв'язках додатка A) у HTML не мають сенсу — друкуємо в потоці.
+  show place: it => context if target() == "html" { [#it.body ] } else { it }
   body
 }

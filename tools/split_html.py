@@ -29,6 +29,8 @@ h1.title { font-size: 2.3rem; line-height: 1.2; margin: 2rem 0 .3rem; }
 p.subtitle, p.authors { font-size: 1.2rem; margin: 0 0 .5rem; }
 h2 { font-size: 1.9rem; margin: 1.5rem 0 .4rem; }
 p.author { margin: 0 0 1.2rem; }
+p.part { font-size: 1.1rem; letter-spacing: .08em; text-transform: uppercase; color: #555; margin: 2rem 0 0; }
+nav.toc li.part { margin-top: 1.6rem; font-size: .95rem; letter-spacing: .08em; text-transform: uppercase; color: #555; }
 h3 { font-size: 1.4rem; margin-top: 2rem; }
 h4 { font-size: 1.15rem; }
 h5 { font-size: 1rem; }
@@ -78,32 +80,56 @@ def main(src, out):
     symbols = {m.group(1): m.group(0)
                for m in re.finditer(r'<symbol id="([^"]+)".*?</symbol>', body, re.S)}
 
-    starts = [m.start() for m in re.finditer(r'<h2 class="chapter"', body)]
-    front, chunks = body[: starts[0]], []
-    for i, s in enumerate(starts):
-        chunks.append(body[s : starts[i + 1] if i + 1 < len(starts) else len(body)])
+    # Початок сторінки: <h2 class="chapter"> (розділ/додаток), <h2 class="part"> (титул
+    # частини — потрапляє на початок сторінки наступного розділу) та три «прості» <h2>
+    # — Передмова, Бібліографія, Покажчик. Решта простих <h2> (Огляд, Теми…) — секції
+    # передмови, тому стають <h3>.
+    PLAIN_PAGES = {"Передмова": "preface", "Бібліографія": "refs", "Покажчик": "index-book"}
+    def is_start(m):
+        tag = m.group(0)
+        if 'class="chapter"' in tag or 'class="part"' in tag:
+            return True
+        return text_of(body[m.start(): body.index("</h2>", m.start())]) in PLAIN_PAGES
+    starts = [m.start() for m in re.finditer(r"<h2[^>]*>", body) if is_start(m)]
+    front = body[: starts[0]]
+    chunks = [body[st : starts[i + 1] if i + 1 < len(starts) else len(body)]
+              for i, st in enumerate(starts)]
 
-    pages = []  # (slug, назва, html, [(id, назва секції)])
+    pages = []  # (slug, назва, html, [(id, назва секції)], частина)
+    part_title = None
     for chunk in chunks:
-        m = re.match(r'<h2 class="chapter" id="ch(\d+)">(.*?)</h2>', chunk, re.S)
-        num, title = int(m.group(1)), text_of(m.group(2))
-        slug = f"ch{num:02d}"
+        m = re.match(r'<h2 class="part">(.*?)</h2>', chunk, re.S)
+        if m:
+            part_title = text_of(m.group(1))
+            continue
+        m = re.match(r'<h2 class="chapter" id="ch([0-9A-Z]+)">(.*?)</h2>', chunk, re.S)
+        if m:
+            label, title = m.group(1), text_of(m.group(2))
+            slug = f"ch{int(label):02d}" if label.isdigit() else f"app{label}"
+        else:
+            title = text_of(re.match(r"<h2[^>]*>(.*?)</h2>", chunk, re.S).group(1))
+            slug = PLAIN_PAGES[title]
         sections = []
 
         def anchor(h):
-            label = text_of(h.group(1))
+            label = text_of(h.group(2))
             n = re.match(r"(\d+(?:\.\d+)+)", label)
             sid = "s" + n.group(1).replace(".", "-") if n else f"s{len(sections)}"
             sections.append((sid, label))
-            return f'<h3 id="{sid}">{h.group(1)}</h3>'
+            return f'<h3 id="{sid}">{h.group(2)}</h3>'
 
-        chunk = re.sub(r"<h3>(.*?)</h3>", anchor, chunk, flags=re.S)
-        pages.append((slug, title, chunk, sections))
+        first = re.match(r"<h2[^>]*>.*?</h2>", chunk, re.S).end()
+        rest = re.sub(r"<h2>(.*?)</h2>", r"<h3>\1</h3>", chunk[first:], flags=re.S)
+        chunk = chunk[:first] + re.sub(r"<(h3)>(.*?)</h3>", anchor, rest, flags=re.S)
+        if part_title:
+            chunk = f'<p class="part">{html.escape(part_title)}</p>' + chunk
+        pages.append((slug, title, chunk, sections, part_title))
+        part_title = None
     assert len({p[0] for p in pages}) == len(pages), "повторюваний розділ: перевірте #chap"
 
     # id -> сторінка; виноска живе на сторінці свого посилання
     where = {}
-    for slug, _, chunk, _ in pages:
+    for slug, _, chunk, _, _ in pages:
         for m in re.finditer(r'\bid="([^"]+)"', chunk):
             where[m.group(1)] = f"{slug}.html"
     by_page = {}
@@ -150,7 +176,7 @@ def main(src, out):
             f"{doc_head}<title>{html.escape(page_title)}</title></head><body>{content}</body></html>",
             encoding="utf-8")
 
-    for i, (slug, ch_title, chunk, _) in enumerate(pages):
+    for i, (slug, ch_title, chunk, _, _) in enumerate(pages):
         nav = pager(i)
         if f"{slug}.html" in by_page:
             chunk += ('<section role="doc-endnotes"><ol style="list-style-type: none">'
@@ -158,17 +184,19 @@ def main(src, out):
         chunk = with_symbols(rewrite(chunk, f"{slug}.html"))
         write(f"{slug}.html", f"{ch_title} — {title}", nav + chunk + nav)
 
-    toc = "".join(
-        f'<li><a href="{slug}.html">{html.escape(ch_title)}</a><ol>'
-        + "".join(f'<li><a href="{slug}.html#{sid}">{html.escape(label)}</a></li>' for sid, label in secs)
-        + "</ol></li>"
-        for slug, ch_title, _, secs in pages)
+    toc = ""
+    for slug, ch_title, _, secs, part in pages:
+        if part:
+            toc += f'<li class="part">{html.escape(part)}</li>'
+        toc += (f'<li><a href="{slug}.html">{html.escape(ch_title)}</a>'
+                + ("<ol>" + "".join(f'<li><a href="{slug}.html#{sid}">{html.escape(label)}</a></li>'
+                                    for sid, label in secs) + "</ol>" if secs else "")
+                + "</li>")
     write("index.html", title,
           f'<h1 class="title">{html.escape(title)}</h1>'
           f'<p class="authors">за редакцією Benjamin C. Pierce</p>'
           f'<p><a href="{PDF_NAME}">PDF</a></p>'
-          f'<p>Переклад українською: розділи 1–10 (додатки, покажчик і бібліографію ще не перекладено). '
-          f'Перекладено з видання <em>Advanced Topics in Types and Programming Languages</em>, '
+          f'<p>Перекладено з видання <em>Advanced Topics in Types and Programming Languages</em>, '
           f'Benjamin C. Pierce (editor), The MIT Press, 2004.</p>'
           f'<nav class="toc"><ol>{toc}</ol></nav>')
     print(f"wrote {len(pages) + 1} pages to {out}")
