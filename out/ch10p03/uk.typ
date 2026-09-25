@@ -54,8 +54,31 @@ $D, Gamma tack t : sigma$ вважають ідентичними, коли сп
 лише тоді, коли для деякого задовольненного обмеження $C$ справджується судження вигляду
 $C, Gamma tack t : sigma$. Можна запитати, чому ми не висуваємо, здавалося б, сильнішої вимоги,
 щоб $C and exists sigma$ було задовольненним; однак, оглянувши правила типізації, читач може
-перевірити, що якщо наведене вище судження вивідне, то справджується $C ⊢ exists sigma$, отже
+перевірити, що якщо наведене вище судження вивідне, то справджується $C forces exists sigma$, отже
 ці дві вимоги еквівалентні.
+
+#figure([Рисунок 10-7: Правила типізації для HM(X)], grid(
+  columns: (1fr, 1fr), column-gutter: 0.6em,
+  rules(scale: 0.80, [
+    #rule($Gamma(x) = sigma quad quad C forces exists sigma$, "hmx-Var", $C, Gamma tack x : sigma$)
+    #v(0.5em)
+    #rule($C, (Gamma ; z : T) tack t : T'$, "hmx-Abs", $C, Gamma tack lambda z . t : T arrow.r T'$)
+    #v(0.5em)
+    #rule($C, Gamma tack t_1 : T arrow.r T' quad quad C, Gamma tack t_2 : T$, "hmx-App", $C, Gamma tack t_1 t_2 : T'$)
+    #v(0.5em)
+    #rule($C, Gamma tack t_1 : sigma quad quad C, (Gamma ; z : sigma) tack t_2 : T$, "hmx-Let", $C, Gamma tack "let" z = t_1 "in" t_2 : T$)
+  ]),
+  rules(scale: 0.80, [
+    #rule($C and D, Gamma tack t : T quad quad macron(X) hash "ftv"(C, Gamma)$, "hmx-Gen", $C and exists macron(X) . D, Gamma tack t : forall macron(X)[D] . T$)
+    #v(0.5em)
+    #rule($C, Gamma tack t : forall macron(X)[D] . T$, "hmx-Inst", $C and D, Gamma tack t : T$)
+    #v(0.5em)
+    #rule($C, Gamma tack t : T quad quad C forces T lt.eq T'$, "hmx-Sub", $C, Gamma tack t : T'$)
+    #v(0.5em)
+    #rule($C, Gamma tack t : sigma quad quad macron(X) hash "ftv"(Gamma, sigma)$, "hmx-Exists", $exists macron(X) . C, Gamma tack t : sigma$)
+  ])
+))
+
 
 Пояснімо тепер правила. Як і dm-Var, hmx-Var шукає в середовищі, щоб визначити типову схему,
 пов’язану з програмовим ідентифікатором $x$. Його друга посилка відіграє незначну технічну
@@ -116,13 +139,13 @@ $T lt.eq T'$, залежить від поточного припущення $C
 послаблення судження не змінює форми його виведення — корисна властивість при міркуванні
 індукцією за виведеннями типів.
 
-#lem[Послаблення: якщо $C' ⊢ C$, то кожне виведення $C, Gamma tack t : sigma$ можна
+#lem[Послаблення: якщо $C' forces C$, то кожне виведення $C, Gamma tack t : sigma$ можна
 перетворити на виведення $C', Gamma tack t : sigma$ тієї самої форми.]
 
 #exr(diff: "««", rec: true)[У деяких викладах HM(X) hmx-Inst замінено на такий варіант:
 
 #rules([
-  $C ⊢ [arrow(X), arrow(T)]D$
+  $C forces [arrow(X), arrow(T)]D$
   #linebreak()
   $C, Gamma tack t : forall macron(X)[D] . T$
   #linebreak()
@@ -158,6 +181,25 @@ Odersky, Sulzmann і Wehr (1999). Ще одне доведення безпеч�
 робить його іноді простішим для міркувань. Він має ту властивість, що всі судження мають
 вигляд $C, Gamma tack t : T$, а не $C, Gamma tack t : sigma$. Наведена нижче теорема
 стверджує, що ці два виклади справді еквівалентні.
+
+#figure([Рисунок 10-8: Альтернативний виклад HM(X)], grid(
+  columns: (1fr, 1fr), column-gutter: 0.6em,
+  rules(scale: 0.80, [
+    #rule($Gamma(x) = forall macron(X)[D] . T$, "hmd-VarInst", $C and D, Gamma tack x : T$)
+    #v(0.5em)
+    #rule($C, (Gamma ; z : T) tack t : T'$, "hmd-Abs", $C, Gamma tack lambda z . t : T arrow.r T'$)
+    #v(0.5em)
+    #rule($C, Gamma tack t_1 : T arrow.r T' quad quad C, Gamma tack t_2 : T$, "hmd-App", $C, Gamma tack t_1 t_2 : T'$)
+  ]),
+  rules(scale: 0.80, [
+    #rule($C and D, Gamma tack t_1 : T_1 quad quad macron(X) hash "ftv"(C, Gamma) \
+           C and exists macron(X) . D, (Gamma ; z : forall macron(X)[D] . T_1) tack t_2 : T_2$, "hmd-LetGen", $C and exists macron(X) . D, Gamma tack "let" z = t_1 "in" t_2 : T_2$)
+    #v(0.5em)
+    #rule($C, Gamma tack t : T quad quad C forces T lt.eq T'$, "hmd-Sub", $C, Gamma tack t : T'$)
+    #v(0.5em)
+    #rule($C, Gamma tack t : T quad quad macron(X) hash "ftv"(Gamma, T)$, "hmd-Exists", $exists macron(X) . C, Gamma tack t : T$)
+  ])
+))
 
 #thm[$C, Gamma tack t : T$ вивідне за правилами рисунка 10-8 тоді й лише тоді, коли воно є
 припустимим судженням HM(X).]
@@ -198,7 +240,7 @@ $"true", Gamma tack t : S$.]
 якого ми істотно використовуємо. На жаль, через брак місця ми не можемо подати деталей цього
 перекладу, які досить заплутані. Скажемо лише, що за заданих типової схеми $sigma$ і
 ідемпотентної підстановки типів $theta$ таких, що $"ftv"(sigma) subset.eq "dom"(theta)$ і
-$exists theta ⊢ exists sigma$, переклад $sigma$ за $theta$ — це типова схема DM, що
+$exists theta forces exists sigma$, переклад $sigma$ за $theta$ — це типова схема DM, що
 записується $⟦sigma⟧ theta$. Її значення має бути тим самим, що й значення типової схеми
 HM(X) $theta(sigma)$. Наприклад, за тотожної підстановки переклад типової схеми HM(X)
 $forall X Y [X = Y arrow.r Y] . X$ — це типова схема DM $forall Z . Z arrow.r Z$. Переклад
@@ -232,14 +274,14 @@ $(Gamma, t, T)$ до задачі розв’язування обмежень, 
 Тобто обмеження $⟦Gamma tack t : T⟧$ досить конкретне, щоб гарантувати, що $t$ має тип $T$
 в середовищі $Gamma$. Ми кажемо, що породження обмежень коректне. Ми перевіряємо, що воно
 справді необхідне, доводячи, що для кожного обмеження $C$ припустимість $C, Gamma tack t : T$
-тягне $C ⊢ ⟦Gamma tack t : T⟧$. Тобто кожне обмеження, яке гарантує, що $t$ має тип $T$ в
+тягне $C forces ⟦Gamma tack t : T⟧$. Тобто кожне обмеження, яке гарантує, що $t$ має тип $T$ в
 середовищі $Gamma$, принаймні настільки ж конкретне, як $⟦Gamma tack t : T⟧$. Ми кажемо,
 що породження обмежень повне. Разом ці властивості означають, що $⟦Gamma tack t : T⟧$ —
 найменш конкретне обмеження, яке гарантує, що $t$ має тип $T$ в середовищі $Gamma$.
 
 Тепер ми бачимо, як звести задачу виведення типів до задачі розв’язування обмежень. Справді,
 якщо існує задовольненне обмеження $C$ таке, що справджується $C, Gamma tack t : T$, то за
-властивістю повноти справджується $C ⊢ ⟦Gamma tack t : T⟧$, тож
+властивістю повноти справджується $C forces ⟦Gamma tack t : T⟧$, тож
 $⟦Gamma tack t : T⟧$ задовольненне. Обернено, за властивістю коректності, якщо
 $⟦Gamma tack t : T⟧$ задовольненне, то ми маємо задовольненне обмеження $C$ таке, що
 справджується $C, Gamma tack t : T$. Іншими словами, $t$ добре типізований із типом $T$ у
@@ -388,7 +430,7 @@ $⟦"let" f = lambda z . z "in" f f : T⟧$.]
 Перші дві стверджують, що $⟦t : T⟧$ коваріантне щодо $T$. Грубо кажучи, це означає, що
 породжено достатньо обмежень підтипізації, щоб досягти повноти щодо hmd-Sub.
 
-#lem[$⟦t : T⟧ and T lt.eq T' ⊢ ⟦t : T'⟧$.]
+#lem[$⟦t : T⟧ and T lt.eq T' forces ⟦t : T'⟧$.]
 
 #lem[$X in.not "ftv"(T)$ тягне $exists X . (⟦t : X⟧ and X lt.eq T) equiv ⟦t : T⟧$.]
 
@@ -403,10 +445,10 @@ $"let" z : T_1 "in" ⟦t : T_2⟧$.]
 припущень $C$ і $Gamma$, то $C$ мусить бути принаймні настільки ж конкретним, як
 $"let" Gamma "in" ⟦t : T⟧$. Формулювання вимагає, щоб $C$ і $Gamma$ не мали вільних
 програмових ідентифікаторів, що природно, бо вони є частиною судження HM(X). Гіпотеза
-$C ⊢ exists Gamma$ виключає дещо патологічну ситуацію, коли $Gamma$ містить обмеження, не
+$C forces exists Gamma$ виключає дещо патологічну ситуацію, коли $Gamma$ містить обмеження, не
 помітні в $C$. Ця гіпотеза зникає, коли $Gamma$ — початкове середовище; див. означення 10.5.2.
 
-#thm[Повнота: нехай $C ⊢ exists Gamma$. Припустімо $"fpi"(C, Gamma) = emptyset$. Якщо в HM(X)
+#thm[Повнота: нехай $C forces exists Gamma$. Припустімо $"fpi"(C, Gamma) = emptyset$. Якщо в HM(X)
 справджується $C, Gamma tack t : T$, то $C$ тягне $"let" Gamma "in" ⟦t : T⟧$.]
 
 #sec("10.5", "Безпечність типів")
@@ -490,7 +532,7 @@ $"let" Gamma_0 "in" ⟦t : T⟧$ тягне $"let" Gamma_0 "in" ⟦t' : T⟧$.
 кожного типу сховища $M$ такого, що $"dom"(mu) = "dom"(M)$, існують множина типових змінних
 $macron(Y)$ і тип сховища $M'$ такі, що $macron(Y) hash "ftv"(T, M)$ і
 $"ftv"(M') subset.eq macron(Y) union "ftv"(M)$ і $"dom"(M') = "dom"(mu')$ і $M'$ розширює $M$ і
-$"let" Gamma_0 ; "ref" M "in" ⟦t \/ mu : T \/ M⟧ ⊢
+$"let" Gamma_0 ; "ref" M "in" ⟦t \/ mu : T \/ M⟧ forces
 exists macron(Y) . "let" Gamma_0 ; "ref" M' "in" ⟦t' \/ mu' : T \/ M'⟧$.]
 
 Відношення $subset.eq.sq$ покликане виразити зв’язок між конфігурацією та її редуктом. Отже,

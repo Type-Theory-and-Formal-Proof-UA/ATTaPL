@@ -535,14 +535,14 @@ ML-як-системи-типів і доведемо, що він правил�
 повідомляє про невдачу.]
 
 #soln("10.3.2")[Наші гіпотези — $C, Gamma tack t : forall macron(X)[D] . T$ (1) і
-$C ⊢ [arrow(X), arrow(T)] D$ (2). Ми також можемо припустити, без втрати загальності,
+$C forces [arrow(X), arrow(T)] D$ (2). Ми також можемо припустити, без втрати загальності,
 $macron(X) eq.not "ftv"(C, Gamma, arrow(T))$ (3). За hmx-Inst і (1) маємо
 $C and D, Gamma tack t : T$, що за лемою 10.3.1 дає
 $C and D and macron(X) = arrow(T), Gamma tack t : T$ (4). Тепер ми твердимо, що
-$macron(X) = arrow(T) ⊢ T <= [macron(X), arrow(T)] T$ (5) справджується; доведення
+$macron(X) = arrow(T) forces T <= [macron(X), arrow(T)] T$ (5) справджується; доведення
 наведено в наступному абзаці. Застосовуючи hmx-Sub до (4) і до (5), отримуємо
 $C and D and macron(X) = arrow(T), Gamma tack t : [macron(X), arrow(T)] T$ (6). За C-Eq і
-за (2) маємо $C and macron(X) = arrow(T) ⊢ D$, тож (6) можна записати
+за (2) маємо $C and macron(X) = arrow(T) forces D$, тож (6) можна записати
 $C and macron(X) = arrow(T), Gamma tack t : [macron(X), arrow(T)] T$ (7). Нарешті, (3)
 тягне $macron(X) eq.not "ftv"(Gamma, [macron(X), arrow(T)] T)$ (8). Застосовуючи правило
 hmx-Exists до (7) і (8), отримуємо
@@ -550,17 +550,17 @@ $exists macron(X) . (C and macron(X) = arrow(T)), Gamma tack t : [macron(X), arr
 (9). За C-NameEq і за (3) $exists macron(X) . (C and macron(X) = arrow(T))$ еквівалентне
 $C$, отже, (9) — це мета $C, Gamma tack t : [macron(X), arrow(T)] T$.
 
-Тепер залишається встановити (5). Один можливий метод доведення — розкрити означення $⊢$ і
+Тепер залишається встановити (5). Один можливий метод доведення — розкрити означення $forces$ і
 міркувати структурною індукцією за $T$. Ось інший, аксіоматичний підхід. Нехай $Z$ — свіже
 для $T$, $macron(X)$ і $arrow(T)$. За рефлексивністю підтипування та за C-ExTrans маємо
 $"true" equiv T <= T equiv exists Z . (T <= Z and Z <= T)$, що за конгруентністю $equiv$ і за
 C-ExAnd тягне
 $macron(X) = arrow(T) equiv exists Z . (T <= Z and macron(X) = arrow(T) and Z <= T)$ (10).
 Крім того, за C-Eq маємо
-$(macron(X) = arrow(T) and Z <= T) equiv (macron(X) = arrow(T) and Z <= [macron(X), arrow(T)] T) ⊢ (Z <= [macron(X), arrow(T)] T)$
+$(macron(X) = arrow(T) and Z <= T) equiv (macron(X) = arrow(T) and Z <= [macron(X), arrow(T)] T) forces (Z <= [macron(X), arrow(T)] T)$
 (11). Поєднуючи (10) і (11), отримуємо
-$macron(X) = arrow(T) ⊢ exists Z . (T <= Z and Z <= [macron(X), arrow(T)] T)$, що за
-C-ExTrans можна прочитати як $macron(X) = arrow(T) ⊢ T <= [macron(X), arrow(T)] T$.]
+$macron(X) = arrow(T) forces exists Z . (T <= Z and Z <= [macron(X), arrow(T)] T)$, що за
+C-ExTrans можна прочитати як $macron(X) = arrow(T) forces T <= [macron(X), arrow(T)] T$.]
 
 #soln("10.3.3")[Найпростіше можливе виведення $"true", tack lambda z . z : "int" arrow.r "int"$
 є синтаксично керованим. Воно близько нагадує виведення Дамаса — Мілнера, наведене у
@@ -589,7 +589,7 @@ $"true" and "true" equiv "true"$ і на той факт, що судження 
 $"int"$, ми можемо вжити hmx-Inst′ так:
 
 #rules([
-  $"true", tack lambda z . z : forall X ["true"] . X arrow.r X$ $quad quad$ $"true" ⊢ [X, "int"] "true"$
+  $"true", tack lambda z . z : forall X ["true"] . X arrow.r X$ $quad quad$ $"true" forces [X, "int"] "true"$
   #linebreak()
   $"true", tack lambda z . z : "int" arrow.r "int"$
 ])
@@ -605,7 +605,7 @@ $"int"$, ми можемо вжити hmx-Inst′ так:
   #linebreak()
   $Y = "int", tack lambda z . z : forall X . X arrow.r X$
   #linebreak()
-  $Y = "int", tack lambda z . z : Y arrow.r Y$ $quad quad$ $Y = "int" ⊢ Y arrow.r Y <= "int" arrow.r "int"$
+  $Y = "int", tack lambda z . z : Y arrow.r Y$ $quad quad$ $Y = "int" forces Y arrow.r Y <= "int" arrow.r "int"$
   #linebreak()
   $Y = "int", tack lambda z . z : "int" arrow.r "int"$
   #linebreak()
@@ -627,7 +627,7 @@ $C and T = X, Gamma tack t : T$, що за hmx-Sub дає $C and T = X, Gamma ta
 Тепер припустімо, що $Gamma$ замкнене, а $X$ довільне. Тоді (1) справджується, тож
 попередній абзац доводить, що, якщо $t$ добре типізований у межах $Gamma$, то існує
 задовольнюване обмеження $C'$ таке, що $C', Gamma tack t : X$ справджується. За
-властивістю повноти ми тоді мусимо мати $C' ⊢ ⟦Gamma tack t : X⟧$. Оскільки $C'$
+властивістю повноти ми тоді мусимо мати $C' forces ⟦Gamma tack t : X⟧$. Оскільки $C'$
 задовольнюване, це тягне, що $⟦Gamma tack t : X⟧$ також задовольнюване. І навпаки, якщо
 $⟦Gamma tack t : X⟧$ задовольнюване, то за властивістю несуперечливості $t$ добре
 типізований у межах $Gamma$.]
@@ -720,7 +720,7 @@ $exists macron(Y) . "let" Gamma_0 ; "ref" M' "in" ⟦m slash (m, v) : T slash M'
 
 #align(center)[$equiv "let" Gamma_0 ; "ref" M "in" (M(m) <= T and ⟦v : M(m)⟧)$ (3)]
 
-#align(center)[$⊢ "let" Gamma_0 ; "ref" M "in" (⟦v : T⟧ and ⟦v : M(m)⟧)$ (4)]
+#align(center)[$forces "let" Gamma_0 ; "ref" M "in" (⟦v : T⟧ and ⟦v : M(m)⟧)$ (4)]
 
 #align(center)[$equiv "let" Gamma_0 ; "ref" M "in" ⟦v slash (m, v) : T slash M⟧$ (5)]
 
@@ -731,7 +731,7 @@ $exists macron(Y) . "let" Gamma_0 ; "ref" M' "in" ⟦m slash (m, v) : T slash M'
 ◦ Випадок R-Assign. Редукція — це $m := v slash (m, v_0) arrow.r.long v slash (m, v)$.
 Нехай $T$ — довільний тип, а $M$ — тип сховища з областю визначення $\{m\}$. Маємо
 
-#align(center)[$"let" Gamma_0 ; "ref" M "in" ⟦m := v slash (m, v_0) : T slash M⟧ ⊢ "let" Gamma_0 ; "ref" M "in" ⟦m := v : T⟧$ (1)]
+#align(center)[$"let" Gamma_0 ; "ref" M "in" ⟦m := v slash (m, v_0) : T slash M⟧ forces "let" Gamma_0 ; "ref" M "in" ⟦m := v : T⟧$ (1)]
 
 #align(center)[$equiv "let" Gamma_0 ; "ref" M "in" exists Z . ("ref" M(m) <= "ref" Z and ⟦v : Z⟧ and Z <= T)$ (2)]
 
@@ -739,7 +739,7 @@ $exists macron(Y) . "let" Gamma_0 ; "ref" M' "in" ⟦m slash (m, v) : T slash M'
 
 #align(center)[$equiv "let" Gamma_0 ; "ref" M "in" (M(m) <= T and ⟦v : M(m)⟧)$ (4)]
 
-#align(center)[$⊢ "let" Gamma_0 ; "ref" M "in" ⟦v slash (m, v) : T slash M⟧$ (5)]
+#align(center)[$forces "let" Gamma_0 ; "ref" M "in" ⟦v slash (m, v) : T slash M⟧$ (5)]
 
 де (1) — за означенням породження обмежень; (2) — за вправою 10.7.1 і C-InId;
 (3) випливає з того, що $"ref"$ є інваріантним конструктором типів; (4) — за C-NameEq;
