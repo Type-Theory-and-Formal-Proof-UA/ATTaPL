@@ -167,7 +167,7 @@ def main(src, out):
           f'<h1 class="title">{html.escape(title)}</h1>'
           f'<p class="authors">за редакцією Benjamin C. Pierce</p>'
           f'<p><a href="{PDF_NAME}">PDF</a></p>'
-          f'<p>Переклад українською: розділи 1–9 (розділ 10 та додатки ще не перекладено). '
+          f'<p>Переклад українською: розділи 1–10 (додатки, покажчик і бібліографію ще не перекладено). '
           f'Перекладено з видання <em>Advanced Topics in Types and Programming Languages</em>, '
           f'Benjamin C. Pierce (editor), The MIT Press, 2004.</p>'
           f'<nav class="toc"><ol>{toc}</ol></nav>')
