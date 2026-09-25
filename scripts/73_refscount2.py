@@ -23,7 +23,9 @@ for p in range(U['first'], U['last'] + 1):
                 continue
             y = min(s['bbox'][1] for s in sp)
             x = min(s['bbox'][0] for s in sp)
-            if not (100 < y < 620):
+            # Same measured window as scripts/72_refsorder.py: skip only the
+            # running head at y=34.2, keep the body (67.5 … 569.8).
+            if not (50 < y < 600):
                 continue
             key = round(y / 5)
             got = by_y.setdefault(key, [y, x, []])

@@ -68,7 +68,13 @@ def esc(s):
     for ch in '#$@*_~[]':
         s = s.replace(ch, '\\' + ch)
     s = re.sub(r'(\w:)//', r'\1\\//', s)
-    return s
+    # Ligatures are PRESENTATION forms, not text: the extraction renders `ff`/`fi`/`fl`
+    # as U+FB00…U+FB04 and they would be printed verbatim as a single glyph, so a
+    # reader copying a title gets a word that won't match "efficient"/"flow"/
+    # "verification" anywhere.  fold() was only ever applied when COMPARING
+    # (hyphen vocabularies, the solid/hyphenated decision); the emitted run needs the
+    # expanded spelling too, and esc() is the one funnel every run passes through.
+    return fold(s)
 
 
 def page_spans(page):
@@ -80,7 +86,10 @@ def page_spans(page):
                 if not s['text'].strip():
                     continue
                 y = s['bbox'][1]
-                if not (100 < y < 620):
+                # Measured window (see scripts/72_refsorder.py): the running head
+                # is at y=34.2, the body spans 67.5 … 569.8.  A 100pt floor cut
+                # off the head line of every page's first entry.
+                if not (50 < y < 600):
                     continue
                 out.append((y, s['bbox'][0], s['bbox'][2], s['font'] in ITALIC, s['text']))
     out.sort(key=lambda t: (t[0], t[1]))

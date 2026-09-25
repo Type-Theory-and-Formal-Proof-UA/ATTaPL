@@ -19,19 +19,21 @@
 
 #refentry[Ahmed, Amal and David Walker. The logical approach to stack typing. In #emph[ACM SIGPLAN Workshop on Types in Language Design and Implementation (TLDI), New] #emph[Orleans, Louisiana], pages 74–85, January 2003.]
 
-#refentry[Aho, Alfred V., Ravi Sethi, and Jeﬀrey D. Ullman. #emph[Compilers: Principles, Techniques,] #emph[and Tools]. Addison-Wesley, Reading, Massachusetts, 1986.]
+#refentry[Aho, Alfred V., Ravi Sethi, and Jeffrey D. Ullman. #emph[Compilers: Principles, Techniques,] #emph[and Tools]. Addison-Wesley, Reading, Massachusetts, 1986.]
 
 #refentry[Aiken, Alexander, Manuel Fähndrich, and Raph Levien. Better static memory management: Improving region-based analysis of higher-order languages. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI),] #emph[La Jolla, California], pages 174–185, June 1995.]
 
-#refentry[Aiken, Alexander, Jeﬀrey S. Foster, John Kodumal, and Tachio Terauchi. Checking and inferring local non-aliasing. In #emph[ACM SIGPLAN Conference on Programming] #emph[Language Design and Implementation (PLDI), San Diego, California], pages 129–140, June 2003.]
+#refentry[Aiken, Alexander, Jeffrey S. Foster, John Kodumal, and Tachio Terauchi. Checking and inferring local non-aliasing. In #emph[ACM SIGPLAN Conference on Programming] #emph[Language Design and Implementation (PLDI), San Diego, California], pages 129–140, June 2003.]
 
 #refentry[Aiken, Alexander and Edward L. Wimmers. Solving systems of set constraints. In #emph[IEEE Symposium on Logic in Computer Science (LICS), Santa Cruz, California], pages 329–340, June 1992.]
+
+#refentry[Aiken, Alexander and Edward L. Wimmers. Type inclusion constraints and type inference. In #emph[ACM Symposium on Functional Programming Languages and Computer] #emph[Architecture (FPCA), Copenhagen, Denmark], pages 31–41, June 1993.]
 
 #refentry[Altenkirch, Thorsten. #emph[Constructions, Inductive Types and Strong Normalization]. PhD thesis, Laboratory for Foundations of Computer Science, University of Edinburgh, Edinburgh, Scotland, 1993.]
 
 #refentry[Amadio, Roberto M. and Luca Cardelli. Subtyping recursive types. #emph[ACM Transactions on Programming Languages and Systems], 15(4):575–631, 1993. Summary in #emph[ACM Symposium on Principles of Programming Languages (POPL), Orlando,] #emph[Florida], pp. 104–118; also DEC/Compaq Systems Research Center Research Report number 62, August 1990.]
 
-#refentry[Amtoft, Torben, Flemming Nielson, and Hanne Riis Nielson. #emph[Type and Eﬀect Systems:] #emph[Behaviours for Concurrency]. Imperial College Press, 1999.]
+#refentry[Amtoft, Torben, Flemming Nielson, and Hanne Riis Nielson. #emph[Type and Effect Systems:] #emph[Behaviours for Concurrency]. Imperial College Press, 1999.]
 
 #refentry[Ancona, Davide and Elena Zucca. A theory of mixin modules: Basic and derived operators. #emph[Mathematical Structures in Computer Science], 8(4):401–446, August 1998.]
 
@@ -47,13 +49,15 @@
 
 #refentry[Augustsson, Lennart. Cayenne—A language with dependent types. In #emph[ACM SIGPLAN] #emph[International Conference on Functional Programming (ICFP), Baltimore, Maryland], pages 239–250, 1998.]
 
-#refentry[Baader, Franz and Jörg Siekmann. Uniﬁcation theory. In D. M. Gabbay, C. J. Hogger, and J. A. Robinson, editors, #emph[Handbook of Logic in Artiﬁcial Intelligence and Logic] #emph[Programming], volume 2, #emph[Deduction Methodologies], pages 41–125. Oxford University Press, 1994.]
+#refentry[Baader, Franz and Jörg Siekmann. Unification theory. In D. M. Gabbay, C. J. Hogger, and J. A. Robinson, editors, #emph[Handbook of Logic in Artificial Intelligence and Logic] #emph[Programming], volume 2, #emph[Deduction Methodologies], pages 41–125. Oxford University Press, 1994.]
 
 #refentry[Baker, Henry G. Lively linear Lisp—look ma, no garbage! #emph[ACM SIGPLAN Notices], 27 (8):89–98, 1992.]
 
 #refentry[Barendregt, Henk P. #emph[The Lambda Calculus]. North Holland, revised edition, 1984.]
 
 #refentry[Barendregt, Henk P. Introduction to generalized type systems. #emph[Journal of Functional] #emph[Programming], 1(2):125–154, 1991.]
+
+#refentry[Barendregt, Henk P. Lambda calculi with types. In S. Abramsky, D. M. Gabbay, and T. Maibaum, editors, #emph[Handbook of Logic in Computer Science], volume 2, #emph[Computational Structures]. Oxford University Press, 1992.]
 
 #refentry[Barendsen, Erik and Sjaak Smetsers. Conventional and uniqueness typing in graph rewrite systems. In #emph[Foundations of Software Technology and Theoretical Computer] #emph[Science (FSTTCS), Bombay, India], volume 761 of #emph[Lecture Notes in Computer Science], pages 41–51. Springer-Verlag, December 1993.]
 
@@ -63,7 +67,7 @@
 
 #refentry[Bellantoni, Stephan and Stephan Cook. A new recursion-theoretic characterization of polytime functions. #emph[Computational Complexity], 2(2):97–110, 1992.]
 
-#refentry[Bellantoni, Stephan, K.-H. Niggl, and H. Schwichtenberg. Higher type recursion, ramiﬁcation and polynomial time. #emph[Annals of Pure and Applied Logic], 104:17–30, 2000.]
+#refentry[Bellantoni, Stephan, K.-H. Niggl, and H. Schwichtenberg. Higher type recursion, ramification and polynomial time. #emph[Annals of Pure and Applied Logic], 104:17–30, 2000.]
 
 #refentry[Berardi, Stefano. Towards a mathematical analysis of the Coquand-Huet calculus of constructions and the other systems in Barendregt’s cube. Technical report, Department of Computer Science, CMU, and Dipartimento Matematica, Universita di Torino, 1988.]
 
@@ -77,7 +81,9 @@
 
 #refentry[Birkedal, Lars and Robert W. Harper. Constructing interpretations of recursive types in an operational setting. #emph[Information and Computation], 155:3–63, 1999.]
 
-#refentry[Birkedal, Lars and Mads Tofte. A constraint-based region inference algorithm. #emph[Theoretical Computer Science], 258:299–392, 2001. #emph[Florida], pages 171–183, 1996.]
+#refentry[Birkedal, Lars and Mads Tofte. A constraint-based region inference algorithm. #emph[Theoretical Computer Science], 258:299–392, 2001.]
+
+#refentry[Birkedal, Lars, Mads Tofte, and Magnus Vejlstrup. From region inference to von Neumann machines via region representation inference. In #emph[ACM SIGPLAN–SIGACT] #emph[Symposium on Principles of Programming Languages (POPL), St. Petersburg Beach,] #emph[Florida], pages 171–183, 1996.]
 
 #refentry[Blume, Matthias. #emph[The SML/NJ Compilation and Library Manager], May 2002. Available from http:\//www.smlnj.org/doc/CM/index.html.]
 
@@ -101,13 +107,15 @@
 
 #refentry[Bruce, Kim B., Luca Cardelli, and Benjamin C. Pierce. Comparing object encodings. In #emph[International Symposium on Theoretical Aspects of Computer Software (TACS)], September 1997. An earlier version was presented as an invited lecture at the Third International Workshop on Foundations of Object Oriented Languages (FOOL 3), July 1996; full version in #emph[Information and Computation], 155(1–2):108-133, 1999.]
 
+#refentry[de Bruijn, Nicolas G. A survey of the project AUTOMATH. In J. P. Seldin and J. R. Hindley, editors, #emph[To H. B. Curry: Essays in Combinatory Logic, Lambda Calculus,] #emph[and Formalism], pages 589–606. Academic Press, 1980.]
+
 #refentry[Brus, Tom, Marko van Eekelen, Maarten van Leer, and Marinus Plasmeijer. Clean: A language for functional graph rewriting. In #emph[ACM Symposium on Functional Programming Languages and Computer Architecture (FPCA), Portland, Oregon], volume 274 of #emph[Lecture Notes in Computer Science], pages 364–384. Springer-Verlag, September 1987.]
 
 #refentry[Burstall, Rod and Butler Lampson. A kernel language for abstract data types and modules. In #emph[International Symposium on Semantics of Data Types, Sophia-Antipolis,] #emph[France], volume 173 of #emph[Lecture Notes in Computer Science], pages 1–50. Springer-Verlag, June 1984.]
 
 #refentry[Burstall, Rod, David MacQueen, and Donald Sannella. HOPE: an experimental applicative language. In #emph[ACM Symposium on Lisp and Functional Programming (LFP),] #emph[Stanford, California], pages 136–143, August 1980.]
 
-#refentry[Calcagno, Cristiano. Stratiﬁed operational semantics for safety and correctness of region calculus. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming] #emph[Languages (POPL), London, England], pages 155–165, 2001.]
+#refentry[Calcagno, Cristiano. Stratified operational semantics for safety and correctness of region calculus. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming] #emph[Languages (POPL), London, England], pages 155–165, 2001.]
 
 #refentry[Calcagno, Cristiano, Simon Helsen, and Peter Thiemann. Syntactic type soundness results for the region calculus. #emph[Information and Computation], 173(2):199–221, 2002.]
 
@@ -123,13 +131,15 @@
 
 #refentry[Cardelli, Luca and Xavier Leroy. Abstract types and the dot notation. In #emph[IFIP TC2] #emph[Working Conference on Programming Concepts and Methods]. North Holland, 1990. Also appeared as DEC/Compaq SRC technical report 56.]
 
-#refentry[Cardelli, Luca and Giuseppe Longo. A semantic basis for Quest. #emph[Journal of Functional] #emph[Programming], 1(4):417–458, October 1991. Summary in #emph[ACM Conference on Lisp] #emph[and Functional Programming], pp. 30-43, 1990. Also available as DEC/Compaq SRC Research Report 55, Feb. 1990. #emph[Language Design], MIT Press, 1994; available as DEC/Compaq Systems Research Center Research Report \#48, August, 1989; and in the #emph[Proceedings of Workshop] #emph[on the Mathematical Foundations of Programming Semantics (MFPS), New Orleans,] #emph[Louisiana], Springer LNCS, volume 442, pp. 22-52, 1989.]
+#refentry[Cardelli, Luca and Giuseppe Longo. A semantic basis for Quest. #emph[Journal of Functional] #emph[Programming], 1(4):417–458, October 1991. Summary in #emph[ACM Conference on Lisp] #emph[and Functional Programming], pp. 30-43, 1990. Also available as DEC/Compaq SRC Research Report 55, Feb. 1990.]
+
+#refentry[Cardelli, Luca and John Mitchell. Operations on records. #emph[Mathematical Structures] #emph[in Computer Science], 1:3–48, 1991. Also in C. A. Gunter and J. C. Mitchell, editors, #emph[Theoretical Aspects of Object-Oriented Programming: Types, Semantics, and] #emph[Language Design], MIT Press, 1994; available as DEC/Compaq Systems Research Center Research Report \#48, August, 1989; and in the #emph[Proceedings of Workshop] #emph[on the Mathematical Foundations of Programming Semantics (MFPS), New Orleans,] #emph[Louisiana], Springer LNCS, volume 442, pp. 22-52, 1989.]
 
 #refentry[Cartmell, John. Generalised algebraic theories and contextual categories. #emph[Annals of] #emph[Pure and Applied Logic], 32:209–243, 1986.]
 
 #refentry[Cartwright, Robert and Mike Fagan. Soft typing. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Toronto, Ontario], pages 278–292, June 1991.]
 
-#refentry[Cervesato, Iliano, Joshua S. Hodas, and Frank Pfenning. Eﬃcient resource management for linear logic proof search. #emph[Theoretical Computer Science], 232(1–2):133– 163, February 2000.]
+#refentry[Cervesato, Iliano, Joshua S. Hodas, and Frank Pfenning. Efficient resource management for linear logic proof search. #emph[Theoretical Computer Science], 232(1–2):133– 163, February 2000.]
 
 #refentry[Cervesato, Iliano and Frank Pfenning. A linear logical framework. #emph[Information and] #emph[Computation], 179(1):19–75, November 2002.]
 
@@ -149,7 +159,11 @@
 
 #refentry[Comon, Hubert. Constraints in term algebras (short survey). In #emph[Conference on Algebraic Methodology and Software Technology (AMAST),] June, 1993, Workshops in Computing, pages 97–108. Springer-Verlag, 1994.]
 
-#refentry[Constable, Robert L., Stuart F. Allen, Mark Bromley, Rance Cleaveland, James F. Cremer, Robert W. Harper, Douglas J. Howe, Todd B. Knoblock, Paul Mendler, Prakash Panangaden, James T. Sasaki, and Scott F. Smith. #emph[Implementing Mathematics with] #emph[the NuPRL Proof Development System]. Prentice-Hall, Englewood Cliﬀs, NJ, 1986. #emph[Computer Science (LICS), Cambridge, Massachusetts], pages 227–236, June 1986.]
+#refentry[Constable, Robert L., Stuart F. Allen, Mark Bromley, Rance Cleaveland, James F. Cremer, Robert W. Harper, Douglas J. Howe, Todd B. Knoblock, Paul Mendler, Prakash Panangaden, James T. Sasaki, and Scott F. Smith. #emph[Implementing Mathematics with] #emph[the NuPRL Proof Development System]. Prentice-Hall, Englewood Cliffs, NJ, 1986.]
+
+#refentry[Coquand, Catarina. The AGDA proof system homepage, 1998. http:\//www.cs. chalmers.se/\~catarina/agda/.]
+
+#refentry[Coquand, Thierry. An analysis of Girard’s paradox. In #emph[IEEE Symposium on Logic in] #emph[Computer Science (LICS), Cambridge, Massachusetts], pages 227–236, June 1986.]
 
 #refentry[Coquand, Thierry. An algorithm for testing conversion in type theory. In G. Huet and G. Plotkin, editors, #emph[Logical Frameworks], pages 255–279. Cambridge University Press, 1991.]
 
@@ -171,9 +185,11 @@
 
 #refentry[Crary, Karl, Stephanie Weirich, and Greg Morrisett. Intensional polymorphism in type-erasure semantics. In #emph[ACM SIGPLAN International Conference on Functional] #emph[Programming (ICFP), Baltimore, Maryland], pages 301–312, 1998. Full version in #emph[Journal of Functional Programming], 12(6), Nov. 2002, pp. 567–600.]
 
-#refentry[Curtis, Pavel. #emph[Constrained Quantiﬁcation in Polymorphic Type Analysis]. PhD thesis, Cornell University, Ithaca, New York, February 1990.]
+#refentry[Curtis, Pavel. #emph[Constrained Quantification in Polymorphic Type Analysis]. PhD thesis, Cornell University, Ithaca, New York, February 1990.]
 
 #refentry[van Daalen, Diederik T. #emph[The Language Theory of Automath]. PhD thesis, Technische Hogeschool Eindhoven, Eindhoven, The Netherlands, 1980.]
+
+#refentry[Damas, Luis and Robin Milner. Principal type schemes for functional programs. In #emph[ACM Symposium on Principles of Programming Languages (POPL), Albuquerque,] #emph[New Mexico], pages 207–212, 1982.]
 
 #refentry[Danvy, Olivier. Functional unparsing. #emph[Journal of Functional Programming], 8(6):621– 625, 1998.]
 
@@ -185,7 +201,7 @@
 
 #refentry[Dreyer, Derek, Karl Crary, and Robert Harper. A type system for higher-order modules. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), New Orleans, Louisiana], pages 236–249, New Orleans, January 2003.]
 
-#refentry[Dussart, Dirk, Fritz Henglein, and Christian Mossin. Polymorphic recursion and subtype qualiﬁcations: Polymorphic binding-time analysis in polynomial time. In #emph[International Symposium on Static Analysis (SAS), Paris, France], volume 983 of #emph[Lecture] #emph[Notes in Computer Science], pages 118–135. Springer-Verlag, July 1995.]
+#refentry[Dussart, Dirk, Fritz Henglein, and Christian Mossin. Polymorphic recursion and subtype qualifications: Polymorphic binding-time analysis in polynomial time. In #emph[International Symposium on Static Analysis (SAS), Paris, France], volume 983 of #emph[Lecture] #emph[Notes in Computer Science], pages 118–135. Springer-Verlag, July 1995.]
 
 #refentry[Emms, Martin and Hans LeiSS. Extending the type checker for SML by polymorphic recursion—A correctness proof. Technical Report 96-101, Centrum für Informations- und Sprachverarbeitung, Universität München, 1996.]
 
@@ -195,11 +211,13 @@
 
 #refentry[Fähndrich, Manuel and Rob DeLine. Adoption and focus: Practical linear types for imperative programming. In #emph[ACM SIGPLAN Conference on Programming Language] #emph[Design and Implementation (PLDI), Berlin, Germany], pages 13–24, June 2002.]
 
-#refentry[Fähndrich, Manuel, Jakob Rehof, and Manuvir Das. Scalable context-sensitive ﬂow analysis using instantiation constraints. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Vancouver, British Columbia,] #emph[Canada], pages 253–263, June 2000.]
+#refentry[Fähndrich, Manuel, Jakob Rehof, and Manuvir Das. Scalable context-sensitive flow analysis using instantiation constraints. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Vancouver, British Columbia,] #emph[Canada], pages 253–263, June 2000.]
 
 #refentry[Felleisen, Matthias and Robert Hieb. A revised report on the syntactic theories of sequential control and state. #emph[Theoretical Computer Science], 103(2):235–271, 1992.]
 
 #refentry[Fisher, Kathleen and John H. Reppy. The design of a class mechanism for Moby. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation] #emph[(PLDI), Atlanta, Georgia], pages 37–49, May 1999.]
+
+#refentry[Flanagan, Cormac and Shaz Qadeer. A type and effect system for atomicity. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation] #emph[(PLDI), San Diego, California], pages 338–349, June 2003.]
 
 #refentry[Flatt, Matthew and Matthias Felleisen. Units: Cool modules for HOT languages. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation] #emph[(PLDI), Montréal, Québec], pages 236–248, 1998.]
 
@@ -207,7 +225,7 @@
 
 #refentry[Fluet, Matthew and Riccardo Pucella. Phantom types and subtyping. In #emph[IFIP International Conference on Theoretical Computer Science (TCS)], pages 448–460, August 2002.]
 
-#refentry[Foster, Jeﬀrey S., Tachio Terauchi, and Alex Aiken. Flow-sensitive type qualiﬁers. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation] #emph[(PLDI), Berlin, Germany], pages 1–12, June 2002.]
+#refentry[Foster, Jeffrey S., Tachio Terauchi, and Alex Aiken. Flow-sensitive type qualifiers. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation] #emph[(PLDI), Berlin, Germany], pages 1–12, June 2002.]
 
 #refentry[Frey, Alexandre. Satisfying subtype inequalities in polynomial space. In #emph[International] #emph[Symposium on Static Analysis (SAS), Paris, France], volume 1302 of #emph[Lecture Notes] #emph[in Computer Science], pages 265–277. Springer-Verlag, September 1997.]
 
@@ -234,7 +252,11 @@
 
 #refentry[Garrigue, Jacques. Relaxing the value restriction. In #emph[International Symposium on] #emph[Functional and Logic Programming (FLOPS), Nara, Japan], volume 2998 of #emph[Lecture] #emph[Notes in Computer Science], pages 196–213. Springer-Verlag, April 2004.]
 
-#refentry[Garrigue, Jacques and Hassan Aït-Kaci. The typed polymorphic label-selective lambda-calculus. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Portland, Oregon], pages 35–47, 1994. Nottingham, Nottingham, England, July 1998.]
+#refentry[Garrigue, Jacques and Hassan Aït-Kaci. The typed polymorphic label-selective lambda-calculus. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Portland, Oregon], pages 35–47, 1994.]
+
+#refentry[Garrigue, Jacques and Didier Rémy. Extending ML with semi-explicit higher-order polymorphism. #emph[Information and Computation], 155(1):134–169, 1999.]
+
+#refentry[Gaster, Benedict R. #emph[Records, variants and qualified types]. PhD thesis, University of Nottingham, Nottingham, England, July 1998.]
 
 #refentry[Gaster, Benedict R. and Mark P. Jones. A polymorphic type system for extensible records and variants. Technical Report NOTTCS-TR-96-3, Department of Computer Science, University of Nottingham, November 1996.]
 
@@ -242,7 +264,7 @@
 
 #refentry[Ghelli, Giorgio and Benjamin Pierce. Bounded existentials and minimal typing, 1992. Circulated in manuscript form. Full version in #emph[Theoretical Computer Science], 193(1–2):75–96, February 1998.]
 
-#refentry[Giﬀord, David K. and John M. Lucassen. Integrating functional and imperative programming. In #emph[ACM Symposium on Lisp and Functional Programming (LFP), Cambridge, Massachusetts], pages 28–38, August 1986.]
+#refentry[Gifford, David K. and John M. Lucassen. Integrating functional and imperative programming. In #emph[ACM Symposium on Lisp and Functional Programming (LFP), Cambridge, Massachusetts], pages 28–38, August 1986.]
 
 #refentry[Girard, Jean-Yves. #emph[Interprétation fonctionnelle et élimination des coupures de l’arithmétique d’ordre supérieur]. Thèse d’état, University of Paris VII, 1972. Summary in J. E. Fenstad, editor, #emph[Scandinavian Logic Symposium], pp. 63–92, North-Holland, 1971.]
 
@@ -262,9 +284,11 @@
 
 #refentry[Gordon, Andrew D. Operational equivalences for untyped and polymorphic object calculi. In A. D. Gordon and A. M. Pitts, editors, #emph[Higher-Order Operational Techniques in Semantics], Publications of the Newton Institute, pages 9–54. Cambridge University Press, 1998.]
 
-#refentry[Gordon, Andrew D. and Alan Jeﬀrey. Typing correspondence assertions for communiation protocols. In #emph[Workshop on the Mathematical Foundations of Programming] #emph[Semantics (MFPS), Aarhus, Denmark], volume 45 of #emph[Electronic Notes in Theoretical] #emph[Computer Science], pages 379–409. Elsevier, May 2001b.]
+#refentry[Gordon, Andrew D. and Alan Jeffrey. Authenticity by typing for security protocols. In #emph[IEEE Computer Security Foundations Workshop (CSFW), Cape Breton, Nova Scotia], pages 145–159, 2001a.]
 
-#refentry[Gordon, Andrew D. and Alan Jeﬀrey. Types and eﬀects for asymmetric cryptographic protocols. In #emph[IEE Computer Security Foundations Workshop (CSFW), Cape Breton,] #emph[Nova Scotia], pages 77–91, 2002.]
+#refentry[Gordon, Andrew D. and Alan Jeffrey. Typing correspondence assertions for communiation protocols. In #emph[Workshop on the Mathematical Foundations of Programming] #emph[Semantics (MFPS), Aarhus, Denmark], volume 45 of #emph[Electronic Notes in Theoretical] #emph[Computer Science], pages 379–409. Elsevier, May 2001b.]
+
+#refentry[Gordon, Andrew D. and Alan Jeffrey. Types and effects for asymmetric cryptographic protocols. In #emph[IEE Computer Security Foundations Workshop (CSFW), Cape Breton,] #emph[Nova Scotia], pages 77–91, 2002.]
 
 #refentry[Gordon, Andrew D. and Don Syme. Typing a multi-language intermediate code. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), London, England], pages 248–260, January 2001.]
 
@@ -286,7 +310,9 @@
 
 #refentry[Hardin, Thérèse, Luc Maranget, and Bruno Pagano. Functional runtimes within the lambda-sigma calculus. #emph[Journal of Functional Programming], 8(2):131–172, March 1998.]
 
-#refentry[Harper, Robert, Furio Honsell, and Gordon Plotkin. A framework for deﬁning logics. #emph[Journal of the ACM], 40(1):143–184, 1993. Summary in #emph[IEEE Symposium on Logic in] #emph[Computer Science (LICS), Ithaca, New York], 1987.]
+#refentry[Harper, Robert, Furio Honsell, and Gordon Plotkin. A framework for defining logics. #emph[Journal of the ACM], 40(1):143–184, 1993. Summary in #emph[IEEE Symposium on Logic in] #emph[Computer Science (LICS), Ithaca, New York], 1987.]
+
+#refentry[Harper, Robert and Mark Lillibridge. A type-theoretic approach to higher-order modules with sharing. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Portland, Oregon], pages 123–137, January 1994.]
 
 #refentry[Harper, Robert and John C. Mitchell. On the type structure of Standard ML. #emph[ACM] #emph[Transactions on Programming Languages and Systems], 15(2):211–252, April 1993. An earlier version appeared in #emph[ACM Symposium on Principles of Programming Languages (POPL), San Diego, California], under the title “The Essence of ML” (Mitchell and Harper), 1988.]
 
@@ -300,17 +326,19 @@
 
 #refentry[Heintze, Nevin. Set based analysis of ML programs. In #emph[ACM Symposium on Lisp and] #emph[Functional Programming (LFP), Orlando, Florida], pages 306–317, June 1994.]
 
-#refentry[Heintze, Nevin. Control-ﬂow analysis and type systems. In #emph[International Symposium on Static Analysis (SAS), Glasgow, Scotland], volume 983 of #emph[Lecture Notes in] #emph[Computer Science], pages 189–206. Springer-Verlag, 1995.]
+#refentry[Heintze, Nevin. Control-flow analysis and type systems. In #emph[International Symposium on Static Analysis (SAS), Glasgow, Scotland], volume 983 of #emph[Lecture Notes in] #emph[Computer Science], pages 189–206. Springer-Verlag, 1995.]
 
 #refentry[Helsen, Simon and Peter Thiemann. Syntactic type soundness for the region calculus. In #emph[Workshop on Higher Order Operational Techniques in Semantics (HOOTS), Montréal, Québec], volume 41(3) of #emph[Electronic Notes in Theoretical Computer Science], pages 1–20. Elsevier, September 2000.]
 
 #refentry[Helsen, Simon and Peter Thiemann. Polymorphic specialization for ML. #emph[ACM Transactions on Programming Languages and Systems], 26(4):652–701, July 2004.]
 
-#refentry[Henglein, Fritz. #emph[Polymorphic Type Inference and Semi-Uniﬁcation]. PhD thesis, Rutgers University, April 1989. Available as NYU Technical Report 443, May 1989, from New York University, Courant Institute of Mathematical Sciences, Department of Computer Science, 251 Mercer St., New York, NY 10012, USA.]
+#refentry[Henglein, Fritz. #emph[Polymorphic Type Inference and Semi-Unification]. PhD thesis, Rutgers University, April 1989. Available as NYU Technical Report 443, May 1989, from New York University, Courant Institute of Mathematical Sciences, Department of Computer Science, 251 Mercer St., New York, NY 10012, USA.]
 
 #refentry[Henglein, Fritz. Type inference with polymorphic recursion. #emph[ACM Transactions on] #emph[Programming Languages and Systems], 15(2):253–289, 1993.]
 
-#refentry[Henglein, Fritz, Henning Makholm, and Henning Niss. A direct approach to control-ﬂow sensitive region-based memory management. In #emph[ACM SIGPLAN International] #emph[Conference on Principles and Practice of Declarative Programming (PPDP), Firenze,] #emph[Italy], pages 175–186, September 2001.]
+#refentry[Henglein, Fritz, Henning Makholm, and Henning Niss. A direct approach to control-flow sensitive region-based memory management. In #emph[ACM SIGPLAN International] #emph[Conference on Principles and Practice of Declarative Programming (PPDP), Firenze,] #emph[Italy], pages 175–186, September 2001.]
+
+#refentry[Henglein, Fritz and Christian Mossin. Polymorphic binding-time analysis. In #emph[European] #emph[Symposium on Programming (ESOP), Edinburgh, Scotland], volume 788 of #emph[Lecture] #emph[Notes in Computer Science], pages 287–301. Springer-Verlag, April 1994.]
 
 #refentry[Hirschowitz, Tom and Xavier Leroy. Mixin modules in a call-by-value setting. In #emph[European Symposium on Programming (ESOP), Grenoble, France], pages 6–20, April 2002.]
 
@@ -324,9 +352,9 @@
 
 #refentry[Hofmann, Martin. Safe recursion with higher types and BCK-algebra. #emph[Annals of Pure] #emph[and Applied Logic], 104(1–3):113–166, 2000.]
 
-#refentry[Honsell, Furio, Ian A. Mason, Scott F. Smith, and Carolyn L. Talcott. A variable typed logic of eﬀects. #emph[Information and Computation], 119(1):55–90, 1995.]
+#refentry[Honsell, Furio, Ian A. Mason, Scott F. Smith, and Carolyn L. Talcott. A variable typed logic of effects. #emph[Information and Computation], 119(1):55–90, 1995.]
 
-#refentry[Howard, William A. Hereditarily majorizable functionals of ﬁnite type. In A. S. Troelstra, editor, #emph[Metamathematical Investigation of Intuitionistic Arithmetic and Analysis], volume 344 of #emph[Lecture Notes in Mathematics], pages 454–461. Springer-Verlag, Berlin, 1973.]
+#refentry[Howard, William A. Hereditarily majorizable functionals of finite type. In A. S. Troelstra, editor, #emph[Metamathematical Investigation of Intuitionistic Arithmetic and Analysis], volume 344 of #emph[Lecture Notes in Mathematics], pages 454–461. Springer-Verlag, Berlin, 1973.]
 
 #refentry[Howard, William A. The formulas-as-types notion of construction. In J. P. Seldin and J. R. Hindley, editors, #emph[To H. B. Curry: Essays on Combinatory Logic, Lambda] #emph[Calculus, and Formalism], pages 479–490. Academic Press, 1980. Reprint of 1969 article.]
 
@@ -336,7 +364,9 @@
 
 #refentry[Igarashi, Atsushi and Naoki Kobayashi. A generic type system for the Pi-calculus. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), London, England], pages 128–141, January 2001.]
 
-#refentry[Igarashi, Atsushi and Naoki Kobayashi. Resource usage analysis. In #emph[ACM SIGPLAN–] #emph[SIGACT Symposium on Principles of Programming Languages (POPL), Portland,] #emph[Oregon], pages 331–342, January 2002. #emph[Languages (FOOL)], January 1999. Full version in #emph[Information and Computation], 175(1): 34–49, May 2002.]
+#refentry[Igarashi, Atsushi and Naoki Kobayashi. Resource usage analysis. In #emph[ACM SIGPLAN–] #emph[SIGACT Symposium on Principles of Programming Languages (POPL), Portland,] #emph[Oregon], pages 331–342, January 2002.]
+
+#refentry[Igarashi, Atsushi and Benjamin C. Pierce. Foundations for virtual types. In #emph[European] #emph[Conference on Object-Oriented Programming (ECOOP), Lisbon, Portugal], June 1999. Also in informal proceedings of the #emph[Workshop on Foundations of Object-Oriented] #emph[Languages (FOOL)], January 1999. Full version in #emph[Information and Computation], 175(1): 34–49, May 2002.]
 
 #refentry[Ishtiaq, Samin and Peter O’Hearn. BI as an assertion language for mutable data structures. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming] #emph[Languages (POPL), London, England], pages 14–26, January 2001.]
 
@@ -356,7 +386,7 @@
 
 #refentry[Johann, Patricia. A generalization of short-cut fusion and its correctness proof. #emph[Higher-Order and Symbolic Computation], 15(4):273–300, 2002.]
 
-#refentry[Jones, Mark P. #emph[Qualiﬁed Types: Theory and Practice]. Cambridge University Press, 1994.]
+#refentry[Jones, Mark P. #emph[Qualified Types: Theory and Practice]. Cambridge University Press, 1994.]
 
 #refentry[Jones, Mark P. Using parameterized signatures to express modular structure. In #emph[ACM] #emph[SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL),] #emph[St. Petersburg Beach, Florida], January 21–24, 1996.]
 
@@ -366,9 +396,11 @@
 
 #refentry[Jones, Mark P. and Simon Peyton Jones. Lightweight extensible records for Haskell. In #emph[ACM Haskell Workshop], informal proceedings, October 1999.]
 
-#refentry[Jouvelot, Pierre and David Giﬀord. Algebraic reconstruction of types and eﬀects. In #emph[ACM Symposium on Principles of Programming Languages (POPL), Orlando,] #emph[Florida], pages 303–310, January 1991.]
+#refentry[Jouannaud, Jean-Pierre and Claude Kirchner. Solving equations in abstract algebras: a rule-based survey of unification. In J.-L. Lassez and G. Plotkin, editors, #emph[Computational Logic: Essays in honor of Alan Robinson], pages 257–321. MIT Press, 1991.]
 
-#refentry[Jouvelot, Pierre and David K. Giﬀord. Reasoning about continuations with control eﬀects. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Portland, Oregon], pages 218–226, June 1989.]
+#refentry[Jouvelot, Pierre and David Gifford. Algebraic reconstruction of types and effects. In #emph[ACM Symposium on Principles of Programming Languages (POPL), Orlando,] #emph[Florida], pages 303–310, January 1991.]
+
+#refentry[Jouvelot, Pierre and David K. Gifford. Reasoning about continuations with control effects. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Portland, Oregon], pages 218–226, June 1989.]
 
 #refentry[Jung, Achim and Allen Stoughton. Studying the fully abstract model of PCF within its continuous function model. In #emph[International Conference on Typed Lambda Calculi] #emph[and Applications (TLCA), Utrecht, The Netherlands], volume 664 of #emph[Lecture Notes in] #emph[Computer Science], pages 230–244. Springer-Verlag, March 1993.]
 
@@ -376,29 +408,33 @@
 
 #refentry[Kfoury, Assaf J., Jerzy Tiuryn, and Pawel Urzyczyn. ML typability is dexptimecomplete. In #emph[Colloquium on Trees in Algebra and Programming (CAAP), Copenhagen, Denmark], volume 431 of #emph[Lecture Notes in Computer Science], pages 206– 220. Springer-Verlag, May 1990.]
 
-#refentry[Kfoury, Assaf J., Jerzy Tiuryn, and Pawel Urzyczyn. The undecidability of the semi-uniﬁcation problem. #emph[Information and Computation], 102(1):83–101, January 1993.]
+#refentry[Kfoury, Assaf J., Jerzy Tiuryn, and Pawel Urzyczyn. The undecidability of the semi-unification problem. #emph[Information and Computation], 102(1):83–101, January 1993.]
 
 #refentry[Kfoury, Assaf J., Jerzy Tiuryn, and Pawel Urzyczyn. An analysis of ML typability. #emph[Journal of the ACM], 41(2):368–398, March 1994.]
 
-#refentry[Kirchner, Claude and Francis Klay. Syntactic theories and uniﬁcation. In #emph[IEEE Symposium on Logic in Computer Science (LICS), Philadelphia, Pennsylvania], pages 270– 277, June 1990.]
+#refentry[Kirchner, Claude and Francis Klay. Syntactic theories and unification. In #emph[IEEE Symposium on Logic in Computer Science (LICS), Philadelphia, Pennsylvania], pages 270– 277, June 1990.]
 
-#refentry[Knight, Kevin. Uniﬁcation: a multidisciplinary survey. #emph[ACM Computing Surveys], 21 (1):93–124, March 1989.]
+#refentry[Knight, Kevin. Unification: a multidisciplinary survey. #emph[ACM Computing Surveys], 21 (1):93–124, March 1989.]
 
 #refentry[Kobayashi, Naoki. Quasi-linear types. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), San Antonio, Texas], pages 29–42, January 1999.]
 
-#refentry[Kozen, Dexter, Jens Palsberg, and Michael I. Schwartzbach. Eﬃcient recursive subtyping. #emph[Mathematical Structures in Computer Science], 5(1):113–125, 1995.]
+#refentry[Kozen, Dexter, Jens Palsberg, and Michael I. Schwartzbach. Efficient recursive subtyping. #emph[Mathematical Structures in Computer Science], 5(1):113–125, 1995.]
 
 #refentry[Kuncak, Viktor and Martin Rinard. Structural subtyping of non-recursive types is decidable. In #emph[IEEE Symposium on Logic in Computer Science (LICS), Ottawa, Canada], pages 96–107, June 2003.]
 
-#refentry[Lafont, Yves. The linear abstract machine. #emph[Theoretical Computer Science], 59:157–180, 1988. data types. #emph[Information and Computation], 76:278–346, February/March 1988.]
+#refentry[Lafont, Yves. The linear abstract machine. #emph[Theoretical Computer Science], 59:157–180, 1988.]
+
+#refentry[Lambek, Joachim. The mathematics of sentence structure. #emph[American Mathematical] #emph[Monthly], 65:154–170, 1958.]
+
+#refentry[Lampson, Butler and Rod Burstall. Pebble, a kernel language for modules and abstract data types. #emph[Information and Computation], 76:278–346, February/March 1988.]
 
 #refentry[Lassen, Søren Bøgh. #emph[Relational Reasoning about Functions and Nondeterminism]. PhD thesis, Department of Computer Science, University of Aarhus, Aarhus, Denmark, 1998.]
 
-#refentry[Lassez, Jean-Louis, Michael J. Maher, and Kim G. Marriott. Uniﬁcation revisited. In J. Minker, editor, #emph[Foundations of Deductive Databases and Logic Programming], pages 587–625. Morgan Kaufmann, 1988.]
+#refentry[Lassez, Jean-Louis, Michael J. Maher, and Kim G. Marriott. Unification revisited. In J. Minker, editor, #emph[Foundations of Deductive Databases and Logic Programming], pages 587–625. Morgan Kaufmann, 1988.]
 
 #refentry[Lee, Oukseh and Kwangkeun Yi. Proofs about a folklore let-polymorphic type inference algorithm. #emph[ACM Transactions on Programming Languages and Systems], 20 (4):707–723, July 1998.]
 
-#refentry[Leivant, Daniel. Stratiﬁed functional programs and computational complexity. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), Charleston, South Carolina], pages 325–333, January 1993.]
+#refentry[Leivant, Daniel. Stratified functional programs and computational complexity. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), Charleston, South Carolina], pages 325–333, January 1993.]
 
 #refentry[Leroy, Xavier. Polymorphic typing of an algorithmic language. Research Report 1778, INRIA, October 1992.]
 
@@ -414,11 +450,11 @@
 
 #refentry[Lillibridge, Mark. #emph[Translucent Sums: A Foundation for Higher-Order Module Systems]. PhD thesis, School of Computer Science, Carnegie Mellon University, Pittsburgh, Pennsylvania, May 1997.]
 
-#refentry[Lindholm, Tim and Frank Yellin. #emph[The Java Virtual Machine Speciﬁcation]. The Java Series. Addison-Wesley, Reading, MA, January 1997.]
+#refentry[Lindholm, Tim and Frank Yellin. #emph[The Java Virtual Machine Specification]. The Java Series. Addison-Wesley, Reading, MA, January 1997.]
 
-#refentry[Liskov, Barbara. A history of CLU. #emph[ACM SIGPLAN Notices], 28(3):133–147, 1993. #emph[tive Programming]. PhD thesis, Massachusetts Institute of Technology, Cambridge, Massachusetts, August 1987. Technical Report MIT-LCS-TR-408.]
+#refentry[Liskov, Barbara. A history of CLU. #emph[ACM SIGPLAN Notices], 28(3):133–147, 1993.]
 
-#refentry[Lucassen, John M. and David K. Giﬀord. Polymorphic eﬀect systems. In #emph[ACM Symposium on Principles of Programming Languages (POPL), San Diego, California], pages 47–57, 1988.]
+#refentry[Loader, Ralph. Finitary PCF is not decidable. #emph[Theoretical Computer Science], 266(1–2): 341–364, September 2001.]
 
 
 // ---- частина 3 ----
@@ -428,6 +464,10 @@
   inset: (left: 0em, right: 0em),
   below: 0.55em,
 )[#body]
+
+#refentry[Lucassen, John M. #emph[Types and Effects towards the Integration of Functional and Imperative Programming]. PhD thesis, Massachusetts Institute of Technology, Cambridge, Massachusetts, August 1987. Technical Report MIT-LCS-TR-408.]
+
+#refentry[Lucassen, John M. and David K. Gifford. Polymorphic effect systems. In #emph[ACM Symposium on Principles of Programming Languages (POPL), San Diego, California], pages 47–57, 1988.]
 
 #refentry[Luo, Zhaohui. #emph[Computation and Reasoning: A Type Theory for Computer Science]. Number 11 in International Series of Monographs on Computer Science. Oxford University Press, 1994.]
 
@@ -441,7 +481,7 @@
 
 #refentry[Magnusson, Lena and Bengt Nordström. The ALF proof editor and its proof engine. In #emph[International Workshop on Types for Proofs and Programs (TYPES), Nijmegen, The] #emph[Netherlands,] May, 1993, volume 806 of #emph[Lecture Notes in Computer Science], pages 213–237. Springer-Verlag, 1994.]
 
-#refentry[Mairson, Harry G., Paris C. Kanellakis, and John C. Mitchell. Uniﬁcation and ML type reconstruction. In J.-L. Lassez and G. Plotkin, editors, #emph[Computational Logic: Essays] #emph[in Honor of Alan Robinson], pages 444–478. MIT Press, 1991.]
+#refentry[Mairson, Harry G., Paris C. Kanellakis, and John C. Mitchell. Unification and ML type reconstruction. In J.-L. Lassez and G. Plotkin, editors, #emph[Computational Logic: Essays] #emph[in Honor of Alan Robinson], pages 444–478. MIT Press, 1991.]
 
 #refentry[Makholm, Henning. Region-based memory management in Prolog. Master’s thesis, University of Copenhagen, Department of Computer Science, March 2000. Technical Report DIKU-TR-00/09.]
 
@@ -449,11 +489,15 @@
 
 #refentry[Makholm, Henning and Kostis Sagonas. On enabling the WAM with region support. In #emph[International Conference on Logic Programming (ICLP)], volume 2401 of #emph[Lecture] #emph[Notes in Computer Science], pages 163–178. Springer-Verlag, July 2002.]
 
-#refentry[Martelli, Alberto and Ugo Montanari. Uniﬁcation in linear time and space: A structured presentation. Internal Report B76-16, Istituto di Elaborazione delle Informazione, Consiglio Nazionale delle Ricerche, Pisa, July 1976.]
+#refentry[Martelli, Alberto and Ugo Montanari. Unification in linear time and space: A structured presentation. Internal Report B76-16, Istituto di Elaborazione delle Informazione, Consiglio Nazionale delle Ricerche, Pisa, July 1976.]
+
+#refentry[Martelli, Alberto and Ugo Montanari. An efficient unification algorithm. #emph[ACM Transactions on Programming Languages and Systems], 4(2):258–282, 1982.]
+
+#refentry[Martin-Löf, Per. #emph[Intuitionistic Type Theory]. Bibliopolis, 1984.]
 
 #refentry[Mason, Ian A., Scott F. Smith, and Carolyn L. Talcott. From operational semantics to domain theory. #emph[Information and Computation], 128(1):26–47, 1996.]
 
-#refentry[Mason, Ian A. and Carolyn L. Talcott. Equivalence in functional languages with eﬀects. #emph[Journal of Functional Programming], 1:287–327, 1991.]
+#refentry[Mason, Ian A. and Carolyn L. Talcott. Equivalence in functional languages with effects. #emph[Journal of Functional Programming], 1:287–327, 1991.]
 
 #refentry[McAllester, David. On the complexity analysis of static analyses. #emph[Journal of the ACM], 49(4):512–537, July 2002.]
 
@@ -469,9 +513,9 @@
 
 #refentry[Milner, Robin. A theory of type polymorphism in programming. #emph[Journal of Computer] #emph[and System Sciences], 17:348–375, August 1978.]
 
-#refentry[Milner, Robin, Mads Tofte, and Robert Harper. #emph[The Deﬁnition of Standard ML]. MIT Press, 1990.]
+#refentry[Milner, Robin, Mads Tofte, and Robert Harper. #emph[The Definition of Standard ML]. MIT Press, 1990.]
 
-#refentry[Milner, Robin, Mads Tofte, Robert Harper, and David MacQueen. #emph[The Deﬁnition of] #emph[Standard ML,] Revised edition. MIT Press, 1997.]
+#refentry[Milner, Robin, Mads Tofte, Robert Harper, and David MacQueen. #emph[The Definition of] #emph[Standard ML,] Revised edition. MIT Press, 1997.]
 
 #refentry[Minamide, Yasuhiko. A functional representation of data structures with a hole. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), San Diego, California], pages 75–84, January 1998.]
 
@@ -481,7 +525,9 @@
 
 #refentry[Mitchell, John C. Coercion and type inference. In #emph[ACM Symposium on Principles] #emph[of Programming Languages (POPL), Salt Lake City, Utah], pages 175–185, January 1984.]
 
-#refentry[Mitchell, John C. On the equivalence of data representations. In V. Lifschitz, editor, #emph[Artiﬁcial Intelligence and Mathematical Theory of Computation: Papers in Honor of] #emph[John McCarthy], pages 305–330. Academic Press, 1991a.]
+#refentry[Mitchell, John C. Representation independence and data abstraction. In #emph[ACM Symposium on Principles of Programming Languages (POPL), St. Petersburg Beach, Florida], pages 263–276, January 1986.]
+
+#refentry[Mitchell, John C. On the equivalence of data representations. In V. Lifschitz, editor, #emph[Artificial Intelligence and Mathematical Theory of Computation: Papers in Honor of] #emph[John McCarthy], pages 305–330. Academic Press, 1991a.]
 
 #refentry[Mitchell, John C. Type inference with simple subtypes. #emph[Journal of Functional Programming], 1(3):245–286, July 1991b.]
 
@@ -503,13 +549,15 @@
 
 #refentry[Mossin, Christian. #emph[Flow Analysis of Typed Higher-Order Programs]. PhD thesis, University of Copenhagen, Department of Computer Science, Copenhagen, Denmark, 1997. Also available as Technical Report DIKU-TR-97/1.]
 
-#refentry[Müller, Martin. A constraint-based recast of ML-polymorphism. In #emph[International Workshop on Uniﬁcation], June 1994. Also available as Technical Report 94-R-243, CRIN, Nancy, France.]
+#refentry[Müller, Martin. A constraint-based recast of ML-polymorphism. In #emph[International Workshop on Unification], June 1994. Also available as Technical Report 94-R-243, CRIN, Nancy, France.]
 
 #refentry[Müller, Martin. Notes on HM(X), August 1998. Available from http:\//www.ps. uni-sb.de/\~mmueller/papers/HMX.ps.gz.]
 
-#refentry[Müller, Martin, Joachim Niehren, and Ralf Treinen. The ﬁrst-order theory of ordering constraints over feature trees. #emph[Discrete Mathematics and Theoretical Computer] #emph[Science], 4(2):193–234, 2001. Springer-Verlag, December 1998.]
+#refentry[Müller, Martin, Joachim Niehren, and Ralf Treinen. The first-order theory of ordering constraints over feature trees. #emph[Discrete Mathematics and Theoretical Computer] #emph[Science], 4(2):193–234, 2001.]
 
-#refentry[Mycroft, Alan. Polymorphic type schemes and recursive deﬁnitions. In #emph[International] #emph[Symposium on Programming, Toulouse, France], volume 167 of #emph[Lecture Notes in] #emph[Computer Science], pages 217–228, Toulouse, France, April 1984. Springer-Verlag.]
+#refentry[Müller, Martin and Susumu Nishimura. Type inference for first-class messages with feature constraints. In #emph[Asian Computer Science Conference (ASIAN), Manila, The] #emph[Philippines], volume 1538 of #emph[Lecture Notes in Computer Science], pages 169–187. Springer-Verlag, December 1998.]
+
+#refentry[Mycroft, Alan. Polymorphic type schemes and recursive definitions. In #emph[International] #emph[Symposium on Programming, Toulouse, France], volume 167 of #emph[Lecture Notes in] #emph[Computer Science], pages 217–228, Toulouse, France, April 1984. Springer-Verlag.]
 
 #refentry[Necula, George C. Proof-carrying code. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Paris, France], pages 106–119, January 1997.]
 
@@ -521,7 +569,7 @@
 
 #refentry[Necula, George C. and Peter Lee. The design and implementation of a certifying compiler. In #emph[ACM SIGPLAN Conference on Programming Language Design and] #emph[Implementation (PLDI), Montréal, Québec], pages 333–344, June 1998a.]
 
-#refentry[Necula, George C. and Peter Lee. Eﬃcient representation and validation of logical proofs. In #emph[IEEE Symposium on Logic in Computer Science (LICS), Indianapolis, Indiana], pages 93–104, June 1998b.]
+#refentry[Necula, George C. and Peter Lee. Efficient representation and validation of logical proofs. In #emph[IEEE Symposium on Logic in Computer Science (LICS), Indianapolis, Indiana], pages 93–104, June 1998b.]
 
 #refentry[Niehren, Joachim, Martin Müller, and Andreas Podelski. Inclusion constraints over non-empty sets of trees. In #emph[Theory and Practice of Software Development (TAPSOFT), Lille, France], volume 1214 of #emph[Lecture Notes in Computer Science], pages 217–231. Springer-Verlag, April 1997.]
 
@@ -533,7 +581,9 @@
 
 #refentry[Nielson, Flemming, Hanne Riis Nielson, and Helmut Seidl. A succinct solver for ALFP. #emph[Nordic Journal of Computing], 9(4):335–372, 2002.]
 
-#refentry[Nielson, Hanne Riis and Flemming Nielson. Higher-order concurrent programs with ﬁnite communication topology. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles] #emph[of Programming Languages (POPL), Portland, Oregon], pages 84–97, January 1994.]
+#refentry[Nielson, Hanne Riis and Flemming Nielson. Higher-order concurrent programs with finite communication topology. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles] #emph[of Programming Languages (POPL), Portland, Oregon], pages 84–97, January 1994.]
+
+#refentry[Nishimura, Susumu. Static typing for dynamic messages. In #emph[ACM SIGPLAN–SIGACT] #emph[Symposium on Principles of Programming Languages (POPL), San Diego, California], pages 266–278, 1998.]
 
 #refentry[Niss, Henning. #emph[Regions are Imperative: Unscoped Regions and Control-Flow Sensitive Memory Management]. PhD thesis, University of Copenhagen, Department of Computer Science, Copenhagen, Denmark, 2002.]
 
@@ -557,13 +607,15 @@
 
 #refentry[Ohori, Atsushi and Peter Buneman. Static type inference for parametric classes. In #emph[Conference on Object Oriented Programming: Systems, Languages, and Applications (OOPSLA), New Orleans, Louisiana], pages 445–456, October 1989. Also in C. A. Gunter and J. C. Mitchell, editors, #emph[Theoretical Aspects of Object-Oriented Programming: Types, Semantics, and Language Design], MIT Press, 1994.]
 
-#refentry[Orlov, Ivan E. The calculus of compatibility of propositions (in Russian). #emph[Matematicheskii Sbornik], 35:263–286, 1928. #emph[New Jersey], volume 1102 of #emph[Lecture Notes in Computer Science], pages 411–414. Springer-Verlag, July 1996.]
+#refentry[Orlov, Ivan E. The calculus of compatibility of propositions (in Russian). #emph[Matematicheskii Sbornik], 35:263–286, 1928.]
 
-#refentry[Palsberg, Jens. Eﬃcient inference of object types. #emph[Information and Computation], 123 (2):198–209, 1995.]
+#refentry[Owre, Sam, Sreeranga Rajan, John M. Rushby, Natarajan Shankar, and Mandayam K. Srivas. PVS: Combining specification, proof checking, and model checking. In #emph[International Conference on Computer Aided Verification (CAV), New Brunswick,] #emph[New Jersey], volume 1102 of #emph[Lecture Notes in Computer Science], pages 411–414. Springer-Verlag, July 1996.]
+
+#refentry[Palsberg, Jens. Efficient inference of object types. #emph[Information and Computation], 123 (2):198–209, 1995.]
 
 #refentry[Palsberg, Jens. Type-based analysis and applications. In #emph[ACM SIGPLAN–SIGSOFT] #emph[Workshop on Program Analysis for Software Tools and Engineering (PASTE), Snowbird, Utah], pages 20–27, June 2001.]
 
-#refentry[Palsberg, Jens and Patrick O’Keefe. A type system equivalent to ﬂow analysis. In #emph[ACM] #emph[SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), San] #emph[Francisco, California], pages 367–378, 1995.]
+#refentry[Palsberg, Jens and Patrick O’Keefe. A type system equivalent to flow analysis. In #emph[ACM] #emph[SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), San] #emph[Francisco, California], pages 367–378, 1995.]
 
 #refentry[Palsberg, Jens and Michael Schwartzbach. Type substitution for object-oriented programming. In #emph[ACM SIGPLAN Conference on Object Oriented Programming:] #emph[Systems, Languages, and Applications (OOPSLA)/European Conference on Object]- #emph[Oriented Programming (ECOOP), Ottawa, Ontario], volume 25(10) of #emph[ACM SIGPLAN] #emph[Notices], pages 151–160, October 1990.]
 
@@ -573,7 +625,7 @@
 
 #refentry[Parnas, David. The criteria to be used in decomposing systems into modules. #emph[Communications of the ACM], 14(1):221–227, 1972.]
 
-#refentry[Paterson, Michael S. and Mark N. Wegman. Linear uniﬁcation. #emph[Journal of Computer] #emph[and System Sciences], 16:158–167, 1978.]
+#refentry[Paterson, Michael S. and Mark N. Wegman. Linear unification. #emph[Journal of Computer] #emph[and System Sciences], 16:158–167, 1978.]
 
 #refentry[Paulin-Mohring, Christine. Extracting #emph[F]ω’s programs from proofs in the calculus of constructions. In #emph[ACM Symposium on Principles of Programming Languages] #emph[(POPL), Austin, Texas], pages 89–104, January 1989.]
 
@@ -583,7 +635,9 @@
 
 #refentry[Peyton Jones, Simon. Special issue: Haskell 98 language and libraries. #emph[Journal of] #emph[Functional Programming], 13, January 2003.]
 
-#refentry[Pfenning, Frank and Rowan Davies. A judgmental reconstruction of modal logic. #emph[Mathematical Structures in Computer Science], 11(4):511–540, 2001. #emph[(TYPES), Kloster Irsee, Germany], volume 1657 of #emph[Lecture Notes in Computer Science]. Springer-Verlag, 1998.]
+#refentry[Pfenning, Frank and Rowan Davies. A judgmental reconstruction of modal logic. #emph[Mathematical Structures in Computer Science], 11(4):511–540, 2001.]
+
+#refentry[Pfenning, Frank and Carsten Schürmann. Algorithms for equality and unification in the presence of notational definitions. In T. Altenkirch, W. Naraschewski, and B. Reus, editors, #emph[International Workshop on Types for Proofs and Programs] #emph[(TYPES), Kloster Irsee, Germany], volume 1657 of #emph[Lecture Notes in Computer Science]. Springer-Verlag, 1998.]
 
 #refentry[Pierce, Benjamin C. #emph[Types and Programming Languages]. MIT Press, 2002.]
 
@@ -601,13 +655,15 @@
 
 #refentry[Pitts, Andrew M. and Ian D. B. Stark. Operational reasoning for functions with local state. In A. D. Gordon and A. M. Pitts, editors, #emph[Higher-Order Operational Techniques] #emph[in Semantics], Publications of the Newton Institute, pages 227–273. Cambridge University Press, 1998.]
 
-#refentry[Plotkin, Gordon D. Lambda-deﬁnability and logical relations. Memorandum SAI–RM– 4, University of Edinburgh, Edinburgh, Scotland, October 1973.]
+#refentry[Plotkin, Gordon D. Lambda-definability and logical relations. Memorandum SAI–RM– 4, University of Edinburgh, Edinburgh, Scotland, October 1973.]
 
 #refentry[Plotkin, Gordon D. LCF considered as a programming language. #emph[Theoretical Computer] #emph[Science], 5:223–255, 1977.]
 
-#refentry[Plotkin, Gordon D. Lambda-deﬁnability in the full type hierarchy. In J. P. Seldin and J. R. Hindley, editors, #emph[To H. B. Curry: Essays on Combinatory Logic, Lambda] #emph[Calculus and Formalism], pages 363–373. Academic Press, 1980.]
+#refentry[Plotkin, Gordon D. Lambda-definability in the full type hierarchy. In J. P. Seldin and J. R. Hindley, editors, #emph[To H. B. Curry: Essays on Combinatory Logic, Lambda] #emph[Calculus and Formalism], pages 363–373. Academic Press, 1980.]
 
-#refentry[Plotkin, Gordon D. and Martín Abadi. A logic for parametric polymorphism. In #emph[International Conference on Typed Lambda Calculi and Applications (TLCA), Utrecht,] #emph[The Netherlands], volume 664 of #emph[Lecture Notes in Computer Science], pages 361–375. Springer-Verlag, March 1993. #emph[Science], pages 295–309. Springer-Verlag, April 1999.]
+#refentry[Plotkin, Gordon D. and Martín Abadi. A logic for parametric polymorphism. In #emph[International Conference on Typed Lambda Calculi and Applications (TLCA), Utrecht,] #emph[The Netherlands], volume 664 of #emph[Lecture Notes in Computer Science], pages 361–375. Springer-Verlag, March 1993.]
+
+#refentry[Polakow, Jeffand Frank Pfenning. Natural deduction for intuitionistic noncommutative linear logic. In #emph[International Conference on Typed Lambda Calculi] #emph[and Applications (TLCA), L’Aquila, Italy], volume 1581 of #emph[Lecture Notes in Computer] #emph[Science], pages 295–309. Springer-Verlag, April 1999.]
 
 #refentry[Poll, Erik. Expansion Postponement for Normalising Pure Type Systems. #emph[Journal of] #emph[Functional Programming], 8(1):89–96, 1998.]
 
@@ -623,11 +679,9 @@
 
 #refentry[Pottier, François. A constraint-based presentation and generalization of rows. In #emph[IEEE] #emph[Symposium on Logic in Computer Science (LICS), Ottawa, Canada], pages 331–340, June 2003.]
 
-#refentry[Pottier, François and Vincent Simonet. Information ﬂow inference for ML. #emph[ACM Transactions on Programming Languages and Systems], 25(1):117–158, January 2003.]
+#refentry[Pottier, François and Vincent Simonet. Information flow inference for ML. #emph[ACM Transactions on Programming Languages and Systems], 25(1):117–158, January 2003.]
 
 #refentry[Pottier, François, Christian Skalka, and Scott Smith. A systematic approach to static access control. In #emph[European Symposium on Programming (ESOP), Genova, Italy], volume 2028 of #emph[Lecture Notes in Computer Science], pages 30–45. Springer-Verlag, April 2001.]
-
-#refentry[Pratt, Vaughan and Jerzy Tiuryn. Satisﬁability of inequalities in a poset. #emph[Fundamenta] #emph[Informaticae], 28(1–2):165–182, 1996.]
 
 
 // ---- частина 4 ----
@@ -638,19 +692,23 @@
   below: 0.55em,
 )[#body]
 
+#refentry[Pratt, Vaughan and Jerzy Tiuryn. Satisfiability of inequalities in a poset. #emph[Fundamenta] #emph[Informaticae], 28(1–2):165–182, 1996.]
+
 #refentry[Pugh, William and Grant Weddell. Two-directional record layout for multiple inheritance. In #emph[ACM SIGPLAN Conference on Programming Language Design and] #emph[Implementation (PLDI), White Plains, New York], pages 85–91, June 1990.]
 
 #refentry[Rajamani, Sriram K. and Jakob Rehof. A behavioral module system for the pi-calculus. In #emph[International Symposium on Static Analysis (SAS), Paris, France], volume 2126 of #emph[Lecture Notes in Computer Science], pages 375–394. Springer-Verlag, July 2001.]
 
-#refentry[Rajamani, Sriram K. and Jakob Rehof. Conformance checking for models of asynchronous message passing software. In #emph[International Conference on Computer] #emph[Aided Veriﬁcation (CAV), Copenhagen, Denmark], pages 166–179, July 2002.]
+#refentry[Rajamani, Sriram K. and Jakob Rehof. Conformance checking for models of asynchronous message passing software. In #emph[International Conference on Computer] #emph[Aided Verification (CAV), Copenhagen, Denmark], pages 166–179, July 2002.]
 
 #refentry[Rehof, Jakob. Minimal typings in atomic subtyping. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Paris, France], pages 278– 291, January 1997.]
 
-#refentry[Rehof, Jakob and Manuel Fähndrich. Type-based ﬂow analysis: From polymorphic subtyping to CFL reachability. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles] #emph[of Programming Languages (POPL), London, England], pages 54–66, 2001. October 2000.]
+#refentry[Rehof, Jakob and Manuel Fähndrich. Type-based flow analysis: From polymorphic subtyping to CFL reachability. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles] #emph[of Programming Languages (POPL), London, England], pages 54–66, 2001.]
+
+#refentry[Reid, Alastair, Matthew Flatt, Leigh Stoller, Jay Lepreau, and Eric Eide. Knit: Component composition for systems software. In #emph[USENIX Symposium on Operating] #emph[Systems Design and Implementation (OSDI), San Diego, California], pages 347–360, October 2000.]
 
 #refentry[Rémy, Didier. Typechecking records and variants in a natural extension of ML. In #emph[ACM Symposium on Principles of Programming Languages (POPL), Austin, Texas], pages 242–249, January 1989. Long version in C. A. Gunter and J. C. Mitchell, editors, #emph[Theoretical Aspects of Object-Oriented Programming: Types, Semantics, and] #emph[Language Design], MIT Press, 1994.]
 
-#refentry[Rémy, Didier. #emph[Algèbres Touﬀues. Application au Typage Polymorphe des Objets Enregistrements dans les Langages Fonctionnels]. PhD thesis, Université Paris VII, 1990.]
+#refentry[Rémy, Didier. #emph[Algèbres Touffues. Application au Typage Polymorphe des Objets Enregistrements dans les Langages Fonctionnels]. PhD thesis, Université Paris VII, 1990.]
 
 #refentry[Rémy, Didier. Extending ML type system with a sorted equational theory. Research Report 1766, Institut National de Recherche en Informatique et Automatisme, Rocquencourt, BP 105, 78 153 Le Chesnay Cedex, France, 1992a.]
 
@@ -660,7 +718,7 @@
 
 #refentry[Rémy, Didier. Programming objects with ML-ART: An extension to ML with abstract and record types. In #emph[International Symposium on Theoretical Aspects of Computer] #emph[Software (TACS), Sendai, Japan], volume 789 of #emph[Lecture Notes in Computer Science], pages 321–346. Springer-Verlag, April 1994.]
 
-#refentry[Rémy, Didier and Jérôme Vouillon. Objective ML: An eﬀective object-oriented extension to ML. #emph[Theory And Practice of Object Systems], 4(1):27–50, 1998. Summary in #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), Paris, France], 1997.]
+#refentry[Rémy, Didier and Jérôme Vouillon. Objective ML: An effective object-oriented extension to ML. #emph[Theory And Practice of Object Systems], 4(1):27–50, 1998. Summary in #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages] #emph[(POPL), Paris, France], 1997.]
 
 #refentry[van Renesse, Robbert, Kenneth P. Birman, Mark Hayden, Alexey Vaysburd, and David Karr. Building adaptive systems using Ensemble. #emph[Software: Practice and Experience], 28(9):963–979, August 1998.]
 
@@ -668,9 +726,11 @@
 
 #refentry[Restall, Greg. Relevant and substructural logics. In D. Gabbay and J. Woods, editors, #emph[Handbook of the History and Philosophy of Logic], volume 6, #emph[Logic and the Modalities] #emph[in the Twentieth Century]. Elsevier, 2005. To appear.]
 
-#refentry[Reynolds, John C. Automatic computation of data set deﬁnitions. In #emph[Information] #emph[Processing 68, Edinburgh, Scotland], volume 1, pages 456–461. North Holland, 1969.]
+#refentry[Reynolds, John C. Automatic computation of data set definitions. In #emph[Information] #emph[Processing 68, Edinburgh, Scotland], volume 1, pages 456–461. North Holland, 1969.]
 
-#refentry[Reynolds, John C. Towards a theory of type structure. In #emph[Colloque sur la Programmation, Paris, France], volume 19 of #emph[Lecture Notes in Computer Science], pages 408–425. Springer-Verlag, 1974. Birkhäuser, 1997.]
+#refentry[Reynolds, John C. Towards a theory of type structure. In #emph[Colloque sur la Programmation, Paris, France], volume 19 of #emph[Lecture Notes in Computer Science], pages 408–425. Springer-Verlag, 1974.]
+
+#refentry[Reynolds, John C. Syntactic control of interference. In #emph[ACM Symposium on Principles] #emph[of Programming Languages (POPL), Tucson, Arizona], pages 39–46, January 1978. Reprinted in O’Hearn and Tennent, #emph[ALGOL-like Languages], vol. 1, pages 273–286, Birkhäuser, 1997.]
 
 #refentry[Reynolds, John C. Types, abstraction, and parametric polymorphism. In R. E. A. Mason, editor, #emph[Information Processing 83, Paris, France], pages 513–523. Elsevier, 1983.]
 
@@ -678,7 +738,7 @@
 
 #refentry[Reynolds, John C. Intuitionistic reasoning about shared mutable data structure. In J. Davies, A. W. Roscoe, and J. Woodcock, editors, #emph[Millennial Perspectives in Computer Science: Proceedings of the 1999 Oxford-Microsoft Symposium in honour of] #emph[Sir Tony Hoare]. Palgrave Macmillan, 2000.]
 
-#refentry[Robinson, J. Alan. Computational logic: The uniﬁcation computation. #emph[Machine Intelligence], 6:63–72, 1971.]
+#refentry[Robinson, J. Alan. Computational logic: The unification computation. #emph[Machine Intelligence], 6:63–72, 1971.]
 
 #refentry[Ross, Douglas T. The AED free storage package. #emph[Communications of the ACM], 10(8): 481–492, 1967.]
 
@@ -694,11 +754,13 @@
 
 #refentry[Sangiorgi, Davide and David. #emph[The] π#emph[-Calculus: a Theory of Mobile Processes]. Cambridge University Press, 2001.]
 
-#refentry[Sannella, Donald, Stefan Sokolowski, and Andrzej Tarlecki. Toward formal development of programs from algebraic speciﬁcations: Parameterisation revisited. #emph[Acta] #emph[Informatica], 29(8):689–736, 1992.]
+#refentry[Sannella, Donald, Stefan Sokolowski, and Andrzej Tarlecki. Toward formal development of programs from algebraic specifications: Parameterisation revisited. #emph[Acta] #emph[Informatica], 29(8):689–736, 1992.]
 
 #refentry[Schneider, Fred B. Enforceable security policies. #emph[ACM Transactions on Information] #emph[and System Security], 3(1):30–50, February 2000.]
 
 #refentry[Schwartz, Jacob T. Optimization of very high level languages (parts I and II). #emph[Computer Languages], 1(2–3):161–194, 197–218, 1975.]
+
+#refentry[Seldin, Jonathan. Curry’s anticipation of the types used in programming languages. In #emph[Proceedings of the Annual Meeting of the Canadian Society for History and Philosophy of Mathematics, Toronto, Ontario], pages 143–163, May 2002.]
 
 #refentry[Semmelroth, Miley and Amr Sabry. Monadic encapsulation in ML. In #emph[ACM SIGPLAN] #emph[International Conference on Functional Programming (ICFP), Paris, France], pages 8–17, September 1999.]
 
@@ -706,7 +768,7 @@
 
 #refentry[Sestoft, Peter. Moscow ML homepage, 2003. http:\//www.dina.dk/\~sestoft/ mosml.html.]
 
-#refentry[Severi, Paula and Erik Poll. Pure type systems with deﬁnitions. In #emph[International Symposium on Logical Foundations of Computer Science (LFCS), St. Petersburg, Russia], volume 813 of #emph[Lecture Notes in Computer Science], pages 316–328. Springer-Verlag, September 1994.]
+#refentry[Severi, Paula and Erik Poll. Pure type systems with definitions. In #emph[International Symposium on Logical Foundations of Computer Science (LFCS), St. Petersburg, Russia], volume 813 of #emph[Lecture Notes in Computer Science], pages 316–328. Springer-Verlag, September 1994.]
 
 #refentry[Shao, Zhong. An overview of the FLINT/ML compiler. In #emph[ACM SIGPLAN Workshop on] #emph[Types in Compilation (TIC), Amsterdam, The Netherlands], June 1997.]
 
@@ -716,15 +778,17 @@
 
 #refentry[Shao, Zhong, Christopher League, and Stefan Monnier. Implementing typed intermediate languages. In #emph[ACM SIGPLAN International Conference on Functional Programming (ICFP), Baltimore, Maryland], pages 313–323, September 1998.]
 
-#refentry[Shivers, Olin. Control ﬂow analysis in Scheme. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Atlanta, Georgia], pages 164–174, June 1988.]
+#refentry[Shivers, Olin. Control flow analysis in Scheme. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Atlanta, Georgia], pages 164–174, June 1988.]
 
 #refentry[Shivers, Olin. #emph[Control-Flow Analysis of Higher-Order Languages or Taming Lambda]. PhD thesis, Carnegie Mellon University, Pittsburgh, Pennsylvania, May 1991.]
 
-#refentry[Simonet, Vincent. Type inference with structural subtyping: a faithful formalization of an eﬃcient constraint solver. In #emph[Asian Symposium on Programming Languages] #emph[and Systems (APLAS), Beijing, China], pages 283–302, November 2003.]
+#refentry[Simonet, Vincent. Type inference with structural subtyping: a faithful formalization of an efficient constraint solver. In #emph[Asian Symposium on Programming Languages] #emph[and Systems (APLAS), Beijing, China], pages 283–302, November 2003.]
 
 #refentry[Skalka, Christian and François Pottier. Syntactic type soundness for HM(X). In #emph[Workshop on Types in Programming (TIP), Dagstuhl, Germany], volume 75 of #emph[Electronic] #emph[Notes in Theoretical Computer Science]. Elsevier, July 2002.]
 
 #refentry[Smith, Frederick, David Walker, and Greg Morrisett. Alias types. In #emph[European Symposium on Programming (ESOP), Berlin, Germany], volume 1782 of #emph[Lecture Notes in] #emph[Computer Science], pages 366–381. Springer-Verlag, April 2000.]
+
+#refentry[Smith, Geoffrey S. Principal type schemes for functional programs with overloading and subtyping. #emph[Science of Computer Programming], 23(2–3):197–226, December 1994.]
 
 #refentry[Smith, Jan, Bengt Nordström, and Kent Petersson. #emph[Programming in Martin-Löf’s Type] #emph[Theory: An Introduction]. Oxford University Press, 1990.]
 
@@ -740,7 +804,7 @@
 
 #refentry[Streicher, Thomas. #emph[Semantics of Type Theory]. Springer-Verlag, 1991.]
 
-#refentry[Su, Zhendong, Alexander Aiken, Joachim Niehren, Tim Priesnitz, and Ralf Treinen. The ﬁrst-order theory of subtyping constraints. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Portland, Oregon], pages 203–216, January 2002.]
+#refentry[Su, Zhendong, Alexander Aiken, Joachim Niehren, Tim Priesnitz, and Ralf Treinen. The first-order theory of subtyping constraints. In #emph[ACM SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), Portland, Oregon], pages 203–216, January 2002.]
 
 #refentry[Sulzmann, Martin. #emph[A General Framework for Hindley/Milner Type Systems with Constraints]. PhD thesis, Yale University, Department of Computer Science, New Haven, Connecticut, May 2000.]
 
@@ -750,13 +814,17 @@
 
 #refentry[Sun. #emph[Java]TM #emph[2 Platform Micro Edition (J2ME]TM#emph[) Technology for Creating Mobile] #emph[Devices—White Paper]. Sun Microsystems, May 2000. Available from http:\//java. sun.com/products/kvm/wp/KVMwp.pdf.]
 
-#refentry[Tait, William W. Intensional interpretations of functionals of ﬁnite type I. #emph[Journal of] #emph[Symbolic Logic], 32(2):198–212, June 1967.]
+#refentry[Tait, William W. Intensional interpretations of functionals of finite type I. #emph[Journal of] #emph[Symbolic Logic], 32(2):198–212, June 1967.]
 
-#refentry[Talcott, C. Reasoning about functions with eﬀects. In A. D. Gordon and A. M. Pitts, editors, #emph[Higher Order Operational Techniques in Semantics], Publications of the Newton Institute, pages 347–390. Cambridge University Press, 1998.]
+#refentry[Talcott, C. Reasoning about functions with effects. In A. D. Gordon and A. M. Pitts, editors, #emph[Higher Order Operational Techniques in Semantics], Publications of the Newton Institute, pages 347–390. Cambridge University Press, 1998.]
 
-#refentry[Talpin, Jean-Pierre and Pierre Jouvelot. Polymorphic type, region and eﬀect inference. #emph[Journal of Functional Programming], 2(2):245–271, 1992. Peter Lee. TIL: A type-directed optimizing compiler for ML. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Philadephia,] #emph[Pennsylvania], pages 181–192, May 1996.]
+#refentry[Talpin, Jean-Pierre and Pierre Jouvelot. Polymorphic type, region and effect inference. #emph[Journal of Functional Programming], 2(2):245–271, 1992.]
 
-#refentry[Tarjan, Robert Endre. Eﬃciency of a good but not linear set union algorithm. #emph[Journal] #emph[of the ACM], 22(2):215–225, April 1975.]
+#refentry[Talpin, Jean-Pierre and Pierre Jouvelot. The type and effect discipline. #emph[Information] #emph[and Computation], 111:245–296, 1994.]
+
+#refentry[Tarditi, David, Greg Morrisett, Perry Cheng, Christopher Stone, Robert Harper, and Peter Lee. TIL: A type-directed optimizing compiler for ML. In #emph[ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI), Philadephia,] #emph[Pennsylvania], pages 181–192, May 1996.]
+
+#refentry[Tarjan, Robert Endre. Efficiency of a good but not linear set union algorithm. #emph[Journal] #emph[of the ACM], 22(2):215–225, April 1975.]
 
 #refentry[Tarjan, Robert Endre. Applications of path compression on balanced trees. #emph[Journal] #emph[of the ACM], 26(4):690–715, October 1979.]
 
@@ -782,6 +850,8 @@
 
 #refentry[Torgersen, Mads. Virtual types are statically safe. In #emph[International Workshop on Foundations of Object-Oriented Languages (FOOL)], informal proceedings, January 1998.]
 
+#refentry[Trifonov, Valery and Scott Smith. Subtyping constrained types. In #emph[International Symposium on Static Analysis (SAS), Aachen, Germany], volume 1145 of #emph[Lecture Notes] #emph[in Computer Science], pages 349–365. Springer-Verlag, September 1996.]
+
 #refentry[Turner, David N. and Philip Wadler. Operational interpretations of linear logic. #emph[Theoretical Computer Science], 227:231–248, 1999. Special issue on linear logic.]
 
 #refentry[Turner, David N., Philip Wadler, and Christian Mossin. Once upon a type. In #emph[ACM] #emph[Symposium on Functional Programming Languages and Computer Architecture] #emph[(FPCA)San Diego, California], pages 1–11, June 1995.]
@@ -792,9 +862,9 @@
 
 #refentry[Wadler, Philip. Linear types can change the world. In #emph[IFIP TC 2 Working Conference] #emph[on Programming Concepts and Methods, Sea of Galilee, Israel], pages 546–566, April 1990.]
 
-#refentry[Wadler, Philip. The marriage of eﬀects and monads. #emph[ACM Transactions on Computational Logic], 4(1):1–32, 2003.]
+#refentry[Wadler, Philip. The marriage of effects and monads. #emph[ACM Transactions on Computational Logic], 4(1):1–32, 2003.]
 
-#refentry[Wahbe, Robert, Steven Lucco, Thomas E. Anderson, and Susan L. Graham. Eﬃcient software-based fault isolation. In #emph[ACM Symposium on Operating Systems Principles] #emph[(SOSP), Asheville, North Carolina], pages 203–216, December 1993.]
+#refentry[Wahbe, Robert, Steven Lucco, Thomas E. Anderson, and Susan L. Graham. Efficient software-based fault isolation. In #emph[ACM Symposium on Operating Systems Principles] #emph[(SOSP), Asheville, North Carolina], pages 203–216, December 1993.]
 
 #refentry[Walker, David, Karl Crary, and Greg Morrisett. Typed memory management via static capabilities. #emph[ACM Transactions on Programming Languages and Systems], 22(4): 701–771, July 2000.]
 
@@ -808,7 +878,9 @@
 
 #refentry[Wand, Mitchell. Corrigendum: Complete type inference for simple objects. In #emph[IEEE] #emph[Symposium on Logic in Computer Science (LICS), Edinburgh, Scotland], page 132, 1988.]
 
-#refentry[Wand, Mitchell. Type inference for objects with instance variables and inheritance. In C. A. Gunter and J. C. Mitchell, editors, #emph[Theoretical Aspects of Object-Oriented] #emph[SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL),] #emph[London, England], pages 166–178, January 2001.]
+#refentry[Wand, Mitchell. Type inference for objects with instance variables and inheritance. In C. A. Gunter and J. C. Mitchell, editors, #emph[Theoretical Aspects of Object-Oriented] #emph[Programming: Types, Semantics, and Language Design], pages 97–120. MIT Press, 1994.]
+
+#refentry[Wang, Daniel C. and Andrew W. Appel. Type-preserving garbage collectors. In #emph[ACM] #emph[SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL),] #emph[London, England], pages 166–178, January 2001.]
 
 #refentry[Wansbrough, Keith and Simon Peyton Jones. Once upon a polymorphic type. In #emph[ACM] #emph[SIGPLAN–SIGACT Symposium on Principles of Programming Languages (POPL), San] #emph[Antonio, Texas], pages 15–28, January 1999.]
 

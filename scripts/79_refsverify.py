@@ -35,7 +35,12 @@ for p in range(U['first'], U['last'] + 1):
             if not sp:
                 continue
             y = min(s['bbox'][1] for s in sp)
-            if not (100 < y < 620):
+            # Same measured window as the extractor (scripts/72_refsorder.py):
+            # only the running head at y=34.2 is excluded.  The old 100pt floor
+            # hid every page's first entry from the verifier too, which is why it
+            # once agreed with the equally-short parse — two readers sharing one
+            # wrong window confirm each other's omissions.
+            if not (50 < y < 600):
                 continue
             for s in sp:
                 raw.append((y, s['bbox'][0], s['text']))

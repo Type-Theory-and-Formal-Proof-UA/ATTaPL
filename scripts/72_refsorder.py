@@ -44,7 +44,12 @@ def page_lines(p):
                 continue
             y = round(min(s['bbox'][1] for s in sp), 1)
             x = min(s['bbox'][0] for s in sp)
-            if y < 100 or y > 620:
+            # Running head ("References" + folio) sits at y=34.2 and must be
+            # skipped; the BODY starts at y=67.5 and runs to 569.8 on a 648pt
+            # page.  The window was (100, 620), which swallowed the HEAD LINE of
+            # the first entry on every page (they all start at y=67.5) and lost
+            # 5 whole entries whose heads landed there.  Measured bounds instead.
+            if y < 50 or y > 600:
                 continue
             # snap to a 5pt bucket so the same visual line merges
             key = round(y / 5)
