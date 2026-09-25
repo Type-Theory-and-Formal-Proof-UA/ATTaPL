@@ -1,0 +1,12 @@
+// Згенеровано scripts/50_assemble.py — не редагувати вручну.
+// Усі перекладені розділи в одному документі.
+#include "/templates/frontmatter.typ"
+#include "/book/ch01.typ"
+#include "/book/ch02.typ"
+#include "/book/ch03.typ"
+#include "/book/ch04.typ"
+#include "/book/ch05.typ"
+#include "/book/ch06.typ"
+#include "/book/ch07.typ"
+#include "/book/ch08.typ"
+#include "/book/ch09.typ"

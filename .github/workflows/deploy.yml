@@ -1,0 +1,60 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: typst-community/setup-typst@v4
+        with:
+          typst-version: 0.15.0
+
+      - name: Compile book
+        run: |
+          mkdir -p _site
+          typst compile --root . book/attapl-uk.typ _site/attapl-uk.pdf
+          cat > _site/index.html <<'HTML'
+          <!doctype html>
+          <html lang="uk">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta http-equiv="refresh" content="0; url=attapl-uk.pdf">
+            <title>Поглиблені теми з типів та мов програмування</title>
+          </head>
+          <body>
+            <p><a href="attapl-uk.pdf">Поглиблені теми з типів та мов програмування (PDF)</a></p>
+          </body>
+          </html>
+          HTML
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
