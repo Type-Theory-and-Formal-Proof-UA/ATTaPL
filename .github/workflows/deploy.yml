@@ -36,7 +36,8 @@ jobs:
           typst compile --root . --features html --format html book/attapl-uk.typ build/book.html
           # Typst видає одну довгу сторінку; розрізаємо її по розділах.
           python3 tools/split_html.py build/book.html site
-          typst compile --root . book/attapl-uk.typ site/attapl-uk.pdf
+          # PDF: блоки коду оформлює codly (для HTML його не використовуємо).
+          typst compile --root . book/attapl-uk-pdf.typ site/attapl-uk.pdf
           touch site/.nojekyll
           test -s site/index.html
           test -s site/ch01.html

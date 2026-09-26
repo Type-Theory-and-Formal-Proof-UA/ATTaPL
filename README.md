@@ -31,7 +31,8 @@ Languages* (за редакцією Benjamin C. Pierce, The MIT Press, 2004), н
 ## Структура
 
 ```
-book/attapl-uk.typ     точка входу: складає всю книжку
+book/attapl-uk.typ     точка входу: складає всю книжку (HTML)
+book/attapl-uk-pdf.typ те саме для PDF, з codly
 book/chNN.typ          розділ NN = включення його частин з out/
 out/<частина>/uk.typ   переклад однієї частини розділу
 templates/preamble.typ спільна преамбула: заголовки, середовища тверджень
@@ -48,6 +49,13 @@ tools/split_html.py    розрізає HTML-експорт Typst на стор�
 
 Потрібен [Typst](https://github.com/typst/typst) 0.15 (`brew install typst`)
 і Python 3.
+
+Блоки коду в PDF оформлює [codly](https://typst.app/universe/package/codly)
+(`@preview/codly:1.3.0`; Typst завантажує пакет під час першого збирання, тож
+тоді потрібен доступ до мережі): вхід для PDF — `book/attapl-uk-pdf.typ`, він лише
+вмикає codly й включає `book/attapl-uk.typ`. Блоки з `lang: ocaml` підсвічуються.
+HTML збирається з `book/attapl-uk.typ` без codly: його сітки Typst не вміє
+експортувати в HTML. Дошки правил (`#rules`) codly не зачіпає.
 
 ```sh
 make build   # PDF: attapl-uk.pdf

@@ -2,6 +2,8 @@
 // Advanced Topics in Types and Programming Languages — український переклад
 // Спільна преамбула. НЕ редагувати в межах перекладу глав: це спільний файл.
 // ============================================================================
+// codly оформлює блоки коду в PDF (book/attapl-uk-pdf.typ); дошки правил його не потребують.
+#import "@preview/codly:1.3.0": no-codly
 #set page(
   paper: "a4",
   margin: (x: 22mm, y: 20mm),
@@ -157,7 +159,7 @@
     #set text(size: 10.5pt * scale)
     #set par(justify: false, first-line-indent: 0em, leading: 0.60em)
     #set block(spacing: 0.45em)
-    #body
+    #no-codly(body)
   ]
   if target() == "html" { html-frame(box) } else { box }
 }
